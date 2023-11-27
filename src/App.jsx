@@ -6,6 +6,8 @@ import './App.css';
 
 // import Page
 import Home from './page/Home'
+import Anglais from './page/Project/Anglais'
+import NotFound from './page/NotFound';
 
 
   function App() {
@@ -19,6 +21,14 @@ import Home from './page/Home'
               <Home />
             }
           />
+          <Route
+            path='/projects/anglais'
+            exact
+            element={
+              <Anglais />
+            }
+          />
+           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     );
