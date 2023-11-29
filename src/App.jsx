@@ -25,7 +25,7 @@ import HeaderCompongnement from './compoments/fixed/header/header';
             }
           />
           <Route
-            path='/projects/anglais'
+            path='/Projets/anglais'
             exact
             element={
               <Anglais />
