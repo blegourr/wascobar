@@ -1,19 +1,42 @@
 import { useNavigate } from 'react-router-dom';
-import './header.css'
+import './Footer.css'
+import Wave from './compoments/wave';
 
 
 // import d'image
 import Logo from './assets/logo.jpg'
 
-function HeaderCompongnement() {
+function FooterCompongnement() {
   const nav = useNavigate();
 
   return (
-    <div className='HeaderCompongnement'>
-     
+    <div className='FooterCompongnement'>
+      <Wave />
+      <div className="container">
+        <div className="containerlink">
+          <div className="button">
+            <button onClick={() => nav("/Soutiens")}>Nous soutenir</button>
+            <div className="belowButton"></div>
+          </div>
+          <div className='logo'>
+            <img src={Logo} alt="" onClick={() => nav("/")} />
+            <p onClick={() => nav("/")}>wascobar</p>
+          </div>
+          <div className="button">
+            <button onClick={() => nav("/Contact")}>Nous contacter</button>
+            <div className="belowButton"></div>
+          </div>
+        </div>
+        <div className="containerlink">
+          <div className="button">
+            <button onClick={() => nav("/Mentions_legal")}>Mentions legal</button>
+            <div className="belowButton"></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
 
 
-export default HeaderCompongnement;
+export default FooterCompongnement;
