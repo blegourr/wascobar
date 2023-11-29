@@ -1,6 +1,6 @@
 import Anglais from './assets/Anglais.jpg'
 import Romance from './assets/Romance.jpg'
-
+import './second_layer.css'
 function home_second_layer() {
   return (
     <div className='home_second_layer'>
