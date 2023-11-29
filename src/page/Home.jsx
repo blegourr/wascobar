@@ -1,8 +1,13 @@
+import FirstLayer from '../compoments/moved/home/second_layer/second_layer'
 
 function PageHome() {
   return (
     <div className='PageHome'>
-      <p>test</p>
+        {/* header */}
+        <FirstLayer />
+        {/* First */}
+        {/* second */}
+        {/* footer */}
     </div>
   );
 }
