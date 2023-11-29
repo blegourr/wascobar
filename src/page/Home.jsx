@@ -1,8 +1,13 @@
 
+
 function PageHome() {
   return (
     <div className='PageHome'>
-      <p>test</p>
+        {/* header */}
+
+        {/* First */}
+        {/* second */}
+        {/* footer */}
     </div>
   );
 }
