@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 // import css
@@ -9,10 +8,14 @@ import Home from './page/Home'
 import Anglais from './page/Project/Anglais'
 import NotFound from './page/NotFound';
 
+// import fixed element
+import HeaderCompongnement from './compoments/fixed/header/header';
+
 
   function App() {
     return (
       <BrowserRouter>
+        <HeaderCompongnement/>
         <Routes>
           <Route
             path='/'
