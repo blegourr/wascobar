@@ -10,7 +10,7 @@ import NotFound from './page/NotFound';
 
 // import fixed element
 import HeaderCompongnement from './compoments/fixed/header/header';
-
+import FooterCompongnement from './compoments/fixed/footer/Footer'
 
   function App() {
     return (
@@ -33,6 +33,7 @@ import HeaderCompongnement from './compoments/fixed/header/header';
           />
            <Route path="*" element={<NotFound />} />
         </Routes>
+        <FooterCompongnement />
       </BrowserRouter>
     );
   }
