@@ -7,19 +7,19 @@ function home_second_layer() {
       <h1>Nos Projets</h1>
       <div className="containerCard">
         <div className="card">
-          <h1>Dualité</h1>
+          <h2 style="text-align: center">Dualité</h2>
           <img src={Anglais} alt="" />
-          <p></p>
+          <p>Blablablabbalbalbalbalbalabaalblablablbalbalbabla</p>
         </div>
         <div className="card">
-          <h1>Anglais</h1>
+          <h2 style="text-align: center">Anglais</h2>
           <img src={Anglais} alt="" />
-          <p></p>
+          <p>blablablablablalbalblalbalabblablablabla</p>
         </div>
         <div className="card">
-          <h1>Romance</h1>
+          <h2 style="text-align: center">Romance</h2>
           <img src={Romance} alt="" />
-          <p></p>
+          <p>Blablablablablabalablabalbalabla</p>
         </div>
       </div>
     </div>

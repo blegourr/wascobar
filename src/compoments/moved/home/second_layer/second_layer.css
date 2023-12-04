@@ -12,21 +12,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: underline;
 }
 
 .home_second_layer .containerCard .card {
-  margin: 2.5vw;
+  margin: 6vw;
   height: 35vw;
-  width: 10vw;
-  background: red;
+  width: 20vw;
+  img {
+    width: 142px;
+    height: 81px;
+  }
+  background: #0A0335;
 }
 
 .home_second_layer .containerCard .card:first-child {
-  background-color: aqua;
+  background-color: #0A0335;
 }
 
 .home_second_layer .containerCard .card:nth-child(3) {
-  background-color: green;
+  background-color: #0A0335;
 }
 
 
