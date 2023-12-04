@@ -18,19 +18,25 @@
   margin: 1.5vw;
   height: 30vw;
   width: 25vw;
+  background: none;
+}
+
+.home_second_layer .containerCard .card .content-card {
   background: linear-gradient(180deg, rgba(32, 15, 137, 0.60) 0%, rgba(10, 3, 53, 0.30) 100%);  border-radius: 2vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 1.5vw;
+  width: 100%;
+  height: 100%;
 }
 
-.home_second_layer .containerCard .card:first-child {
+.home_second_layer .containerCard .card:first-child .content-card {
   background: linear-gradient(155deg, #13075E 0%, rgba(10, 3, 53, 0.20) 100%, rgba(10, 3, 53, 0.37) 100%);
 }
 
-.home_second_layer .containerCard .card:nth-child(3) {
+.home_second_layer .containerCard .card:nth-child(3) .content-card {
   background: linear-gradient(205deg, #13075E 0%, rgba(10, 3, 53, 0.20) 100%);
 }
 
@@ -51,3 +57,21 @@
 .home_second_layer p {
   text-align: center;
 }
+
+.home_second_layer .card .bg-animate {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background: #474cb3;
+  filter: blur(180px);
+  border-radius: 300px;
+  opacity: 0;
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  mix-blend-mode: soft-light;
+  will-change: contents;
+}
+
+.home_second_layer .card:hover .bg-animate {
+  opacity: 0.85;
+}
+
