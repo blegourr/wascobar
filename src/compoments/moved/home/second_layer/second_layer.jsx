@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import Anglais from './assets/Anglais.jpg'
 import Romance from './assets/Romance.jpg'
 import './second_layer.css'
-function home_second_layer() {
+function HomeSecondLayers() {
   useEffect(() => {
     const card = document.querySelectorAll(".card")
     card.forEach(element => {
@@ -15,8 +15,8 @@ function home_second_layer() {
         let middelCardWidth = elementRect.width / 2
         let middelCardHeight = elementRect.height / 2
 
-        let angleY = -(x - middelCardWidth) / 180
-        let angleX = (y - middelCardHeight) / 180
+        let angleY = -(x - middelCardWidth) / 45
+        let angleX = (y - middelCardHeight) / 45
 
         element.children[0].style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg)`
 
@@ -34,31 +34,31 @@ function home_second_layer() {
 
 
   return (
-    <div className='home_second_layer'>
+    <div className='HomeSecondLayers'>
       <h1 className='title'>Nos Projets</h1>
       <div className="containerCard">
-        <div className="card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
-          <div className="content-card">
-            <div className="bg-animate"></div>
+        <div className="card" >
+          <div className="content-card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
             <h1>Dualité</h1>
             <img src={Romance} alt="" />
             <p>Blablab labbalbalbalb albala baal blablabl balb albabla</p>
+            <div className="bg-animate"></div>
           </div>
         </div>
-        <div className="card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
-          <div className="content-card">
-            <div className="bg-animate"></div>
+        <div className="card" >
+          <div className="content-card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
             <h1>Anglais</h1>
             <img src={Anglais} alt="" />
             <p>blab lablablabl albal blalbalabblab lab labla</p>
+            <div className="bg-animate"></div>
           </div>
         </div>
-        <div className="card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
-          <div className="content-card">
-          <div className="bg-animate"></div>
+        <div className="card">
+          <div className="content-card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
             <h1>Romance</h1>
             <img src={Romance} alt="" />
             <p>Blab lablablab labalabla balbala bla</p>
+            <div className="bg-animate"></div>
           </div>
         </div>
       </div>
@@ -67,4 +67,4 @@ function home_second_layer() {
 }
 
 
-export default home_second_layer;
+export default HomeSecondLayers;
