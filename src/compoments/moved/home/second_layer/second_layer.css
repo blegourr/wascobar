@@ -15,21 +15,39 @@
 }
 
 .home_second_layer .containerCard .card {
-  margin: 2.5vw;
-  height: 35vw;
-  width: 10vw;
-  background: red;
+  margin: 1.5vw;
+  height: 30vw;
+  width: 25vw;
+  background: linear-gradient(180deg, rgba(32, 15, 137, 0.60) 0%, rgba(10, 3, 53, 0.30) 100%);  border-radius: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5vw;
 }
 
 .home_second_layer .containerCard .card:first-child {
-  background-color: aqua;
+  background: linear-gradient(155deg, #13075E 0%, rgba(10, 3, 53, 0.20) 100%, rgba(10, 3, 53, 0.37) 100%);
 }
 
 .home_second_layer .containerCard .card:nth-child(3) {
-  background-color: green;
+  background: linear-gradient(205deg, #13075E 0%, rgba(10, 3, 53, 0.20) 100%);
 }
 
+.home_second_layer .containerCard .card img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 8vw;
+  height: 8vw;
+  margin-top: 3.5vw;
+  margin-bottom: 2.5vw;
+}
 
-.home_second_layer h1 {
+.home_second_layer h1.title {
   color: #fff;
+  text-decoration: underline;
+}
+
+.home_second_layer p {
+  text-align: center;
 }
