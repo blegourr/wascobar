@@ -1,12 +1,11 @@
 .second_layer_projet_anglais {
-   width: 100vw; 
-   height: 35vw; 
+   width: 100%;
   background-color: #020010;
 
 }
 
-.second_layer_projet_anglais .info1 {
-  width: 100vw;
+.second_layer_projet_anglais .info {
+  /* width: 100%; */
   height: 35vw;
   background-color: #020010;
   display:flex;
@@ -14,38 +13,16 @@
   justify-content: center;
 }
 
-.second_layer_projet_anglais .info1 img {
+.second_layer_projet_anglais .info img {
   border-radius: 20px;
   object-fit: cover;
   width: 300px;
   height: 300px;
-  /* margin: 100px; */
+  margin: 0 100px; 
 
 }
 
-.second_layer_projet_anglais .info1 p {
+.second_layer_projet_anglais .info p {
   max-width: 500px;
-}
-
-.second_layer_projet_anglais .info2 img {
-  border-radius: 20px;
-  object-fit: cover;
-  width: 300px;
-  height: 300px;
-  /* margin: 100px; */
-
-}
-
-.second_layer_projet_anglais .info2 p {
-  max-width: 500px;
-}
-
-
-.second_layer_projet_anglais .info2 {
-  width: 100vw;
-  height: 35vw;
-  background-color: #020010;
-  display:flex;
-  align-items: center;
-  justify-content: flex-end;
+  text-align: center;
 }
