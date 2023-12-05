@@ -25,7 +25,7 @@ import FooterCompongnement from './compoments/fixed/footer/Footer'
             }
           />
           <Route
-            path='/projects/anglais'
+            path='/Projets/anglais'
             exact
             element={
               <Anglais />
