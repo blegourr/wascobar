@@ -55,3 +55,27 @@
   background-color: #020010;
   z-index: -1;
 }
+
+@media screen and (max-width: 1000px) {
+  .first_layer_404 h1 {
+    font-size: 8rem;
+    text-align: center end;
+  }
+
+  .first_layer_404 p {
+    font-size: 1rem;
+    margin-bottom: .8rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .first_layer_404 h1 {
+    font-size: 6rem;
+    text-align: center end;
+  }
+
+  .first_layer_404 p {
+    font-size: 0.75rem;
+    margin-bottom: .8rem;
+  }
+}

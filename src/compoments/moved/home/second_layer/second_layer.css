@@ -84,3 +84,43 @@
   opacity: 0.85;
 }
 
+@media screen and (max-width:1000px) {
+  .HomeSecondLayers {
+    height: min-content;
+    margin-top: 15vw;
+  }
+
+  .HomeSecondLayers .containerCard {
+    flex-direction: column;
+  }
+
+  .HomeSecondLayers .containerCard .card {
+    margin: 15vw 0;
+    height: 100vw;
+    width: 75vw;
+    background: none;
+  }
+
+  .HomeSecondLayers .containerCard .card img {
+    width: 16vw;
+    height: 16vw;
+    margin-top: 6vw;
+    margin-bottom: 5vw;
+  }
+}
+
+@media screen and (max-width: 680px) {
+
+.HomeSecondLayers .containerCard .card {
+    height: 120vw;
+    width: 90vw;
+    background: none;
+  }
+
+  .HomeSecondLayers .containerCard .card img {
+    width: 24vw;
+    height: 24vw;
+    margin-top: 9.5vw;
+    margin-bottom: 7.5vw;
+  }
+}
