@@ -1,12 +1,13 @@
-import FirstLayer from '../compoments/moved/home/second_layer/second_layer'
+import SecondLayer from '../compoments/moved/home/second_layer/second_layer'
+import ThirdLayer from '../compoments/moved/home/third_layer/third_layer';
 
 function PageHome() {
   return (
     <div className='PageHome'>
         {/* header */}
-        <FirstLayer />
-        {/* First */}
-        {/* second */}
+        <SecondLayer />
+        {/* Third */}
+        <ThirdLayer />
         {/* footer */}
     </div>
   );
