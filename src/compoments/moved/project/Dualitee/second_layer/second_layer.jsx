@@ -1,6 +1,6 @@
 import './second_layer.css'
 
-import oscar2 from './assets/oscar2'
+import oscar2 from './assets/oscar2.jpg'
 
 
 function second_layer() {
