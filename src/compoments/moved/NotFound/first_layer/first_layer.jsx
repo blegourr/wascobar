@@ -1,4 +1,4 @@
-import 'first_layer.css'
+import './first_layer.css'
 
 
 function first_layer_notfound() {
