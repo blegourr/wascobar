@@ -1,0 +1,28 @@
+.home_third_layer .groups {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.home_third_layer .groups img {
+  margin: 0 0 0 5vw;
+}
+
+.home_third_layer .groups.revers img {
+  margin:  0 5vw 0 0;
+}
+
+.home_third_layer .groups p {
+  max-width: 800px;
+}
+
+.home_third_layer .groups.revers {
+  flex-direction: row-reverse;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.home_third_layer p {
+  max-width: 800px;
+}
