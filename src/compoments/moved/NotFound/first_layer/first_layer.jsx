@@ -8,3 +8,5 @@ function first_layer_notfound() {
     </div>
   )
 }
+
+export default first_layer_notfound;
