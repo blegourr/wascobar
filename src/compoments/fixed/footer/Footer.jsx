@@ -13,7 +13,7 @@ function FooterCompongnement() {
     <div className='FooterCompongnement'>
       <Wave />
       <div className="container">
-        <div className="containerlink">
+        <div className="containerlink most">
           <div className="button">
             <button onClick={() => nav("/Soutiens")}>Nous soutenir</button>
             <div className="belowButton"></div>
@@ -21,6 +21,20 @@ function FooterCompongnement() {
           <div className='logo'>
             <img src={Logo} alt="" onClick={() => nav("/")} />
             <p onClick={() => nav("/")}>wascobar</p>
+          </div>
+          <div className="button">
+            <button onClick={() => nav("/Contact")}>Nous contacter</button>
+            <div className="belowButton"></div>
+          </div>
+        </div>
+        <div className="containerlink less">
+          <div className='logo'>
+            <img src={Logo} alt="" onClick={() => nav("/")} />
+            <p onClick={() => nav("/")}>wascobar</p>
+          </div>
+          <div className="button">
+            <button onClick={() => nav("/Soutiens")}>Nous soutenir</button>
+            <div className="belowButton"></div>
           </div>
           <div className="button">
             <button onClick={() => nav("/Contact")}>Nous contacter</button>
