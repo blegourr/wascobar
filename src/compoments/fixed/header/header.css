@@ -4,6 +4,18 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  position: relative;
+  z-index: 5;
+  
+}
+
+.HeaderCompongnement .container {
+  width: 100%;
+  height: 7.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
 }
 
 .HeaderCompongnement .containertitle {
@@ -34,7 +46,8 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 40%;
+  width: 100%;
+  list-style: none;
 }
 
 .HeaderCompongnement .containerButton button {
@@ -46,13 +59,17 @@
   justify-content: center;
   flex-direction: column;
   color: #fff;
-  margin: 0.5vw;
+  margin: 1.5vw;
+}
+
+.HeaderCompongnement .containerButton .button {
+  margin: 0 1vw;
 }
 
 .HeaderCompongnement .containerButton .button .belowButton {
   width: 0;
   height: 0.2rem;
-  background:#eaffea;
+  background: #eaffea;
   transition: all 0.2s;
   transform-origin: center;
   opacity: 0;
@@ -66,4 +83,139 @@
 .HeaderCompongnement .containerButton .button:hover {
   box-shadow: 0 0 2rem #060029;
   background: #06002963;
+}
+
+
+/**
+*    menu Burger
+*/
+.HeaderCompongnement .BurgerMenu {
+  display: none;
+  position: relative;
+  cursor: pointer;
+  width: 10vw;
+  height: 10vw;
+}
+
+.HeaderCompongnement .BurgerMenu span {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  transition: 0.5s ease-out;
+  transform-origin: center;
+}
+
+
+.HeaderCompongnement .BurgerMenu span:first-child {
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.HeaderCompongnement .BurgerMenu span:nth-child(2) {
+  top: 50%;
+  right: 50%;
+  transform: translateX(50%) translateY(-50%);
+}
+
+.HeaderCompongnement .BurgerMenu span:last-child {
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.HeaderCompongnement .BurgerMenu.active span:first-child {
+  transform: translateY(-50%) translateX(-50%) rotate(45deg);
+  top: 50%;
+  right: -50%;
+}
+
+.HeaderCompongnement .BurgerMenu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.HeaderCompongnement .BurgerMenu.active span:last-child {
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  top: 50%;
+  right: -50%;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .HeaderCompongnement {
+    height: 20vw;
+  }
+
+  .HeaderCompongnement .container {
+    height: 20vh;
+  }
+
+  .HeaderCompongnement .containertitle p {
+    display: none;
+  }
+
+  .HeaderCompongnement .containertitle img {
+    height: 16vw;
+    width: 16vw;
+  }
+}
+
+.HeaderCompongnement .container.active {
+  position: fixed;
+}
+
+@media screen and (max-width: 680px) {
+
+  /* Styles spécifiques pour la version mobile avec le menu burger */
+  .HeaderCompongnement .BurgerMenu {
+    display: block;
+    z-index: 5;
+  }
+
+  .HeaderCompongnement nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  .HeaderCompongnement nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .HeaderCompongnement nav ul li {
+    background: #050023;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    border: 0;
+  }
+
+  .HeaderCompongnement .containerButton .button:hover {
+    background: #050023;
+  }
+
+  .HeaderCompongnement nav.active {
+    transform: translateX(0);
+    z-index: 2;
+  }
+
+
+
 }

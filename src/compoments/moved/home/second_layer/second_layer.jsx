@@ -1,8 +1,12 @@
 import { useEffect } from 'react'
+import { useNavigate } from 'react-router';
 import Anglais from './assets/Anglais.jpg'
 import Romance from './assets/Romance.jpg'
 import './second_layer.css'
+
 function HomeSecondLayers() {
+  const nav = useNavigate();
+
   useEffect(() => {
     const card = document.querySelectorAll(".card")
     card.forEach(element => {
@@ -37,7 +41,7 @@ function HomeSecondLayers() {
     <div className='HomeSecondLayers'>
       <h1 className='title'>Nos Projets</h1>
       <div className="containerCard">
-        <div className="card" >
+        <div className="card" onClick={() => nav("/Projets/Dualite")}>
           <div className="content-card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
             <h1>Dualité</h1>
             <img src={Romance} alt="" />
@@ -45,7 +49,7 @@ function HomeSecondLayers() {
             <div className="bg-animate"></div>
           </div>
         </div>
-        <div className="card" >
+        <div className="card" onClick={() => nav('/Projets/Anglais')}>
           <div className="content-card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
             <h1>Anglais</h1>
             <img src={Anglais} alt="" />
