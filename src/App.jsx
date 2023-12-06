@@ -9,14 +9,9 @@ import Anglais from './page/Project/Anglais'
 import Dualite from './page/Project/Dualite'
 import NotFound from './page/NotFound';
 
-// import fixed element
-import HeaderCompongnement from './compoments/fixed/header/header';
-import FooterCompongnement from './compoments/fixed/footer/Footer'
-
   function App() {
     return (
       <BrowserRouter>
-        <HeaderCompongnement/>
         <Routes>
           <Route
             path='/'
@@ -41,7 +36,6 @@ import FooterCompongnement from './compoments/fixed/footer/Footer'
           />
            <Route path="*" element={<NotFound />} />
         </Routes>
-        <FooterCompongnement />
       </BrowserRouter>
     );
   }
