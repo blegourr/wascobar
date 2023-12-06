@@ -7,6 +7,7 @@
 
 .home_third_layer .groups img {
   margin: 0 0 0 5vw;
+  border-radius: 2.3vw ;
 }
 
 .home_third_layer .groups.revers img {
