@@ -8,6 +8,8 @@ import Home from './page/Home'
 import Anglais from './page/Project/Anglais'
 import Dualite from './page/Project/Dualite'
 import NotFound from './page/NotFound';
+import MentionsLegals from './page/MentionsLegals';
+import EasterEgg from './page/EasterEgg';
 
   function App() {
     return (
@@ -34,6 +36,22 @@ import NotFound from './page/NotFound';
               <Dualite />
             }
           />
+            <Route
+            path='/EasterEgg'
+            exact
+            element={
+              <EasterEgg />
+            }
+          />
+          <Route
+          path='/MentionsLegals'
+          exact
+          element={
+            <MentionsLegals />
+          }
+        />
+
+
            <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
