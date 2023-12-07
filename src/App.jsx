@@ -37,14 +37,14 @@ import EasterEgg from './page/EasterEgg';
             }
           />
             <Route
-            path='/EasterEgg'
+            path='/Easter_egg'
             exact
             element={
               <EasterEgg />
             }
           />
           <Route
-          path='/MentionsLegals'
+          path='/Mentions_legal'
           exact
           element={
             <MentionsLegals />
