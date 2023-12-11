@@ -1,0 +1,22 @@
+.first_layer_easterEgg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.first_layer_easterEgg .containerCards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.first_layer_easterEgg .containerCards .card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
