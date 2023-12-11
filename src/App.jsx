@@ -10,6 +10,7 @@ import Dualite from './page/Project/Dualite'
 import NotFound from './page/NotFound';
 import MentionsLegals from './page/MentionsLegals';
 import EasterEgg from './page/EasterEgg';
+import Soutiens from './page/Soutiens';
 
   function App() {
     return (
@@ -41,6 +42,13 @@ import EasterEgg from './page/EasterEgg';
             exact
             element={
               <EasterEgg />
+            }
+          />
+           <Route
+            path='/Soutiens'
+            exact
+            element={
+              <Soutiens />
             }
           />
           <Route

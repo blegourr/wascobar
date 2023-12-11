@@ -17,7 +17,7 @@ function FirstLayerEasterEgg() {
             <div className="background"></div>
             <div className="content">
               <h1>Easter_Egg_Page</h1>
-              <p>Vous avez trouver la page d'Easter_Egg</p>
+              <p>Vous avez trouver la page d&apos;Easter_Egg</p>
             </div>
           </div>
         </div>
@@ -26,7 +26,7 @@ function FirstLayerEasterEgg() {
             <div className="background"></div>
             <div className="content">
               <h1>Easter_Egg_Page</h1>
-              <p>Vous avez trouver la page d'Easter_Egg</p>
+              <p>Vous avez trouver la page d&apos;Easter_Egg</p>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ function FirstLayerEasterEgg() {
             <div className="background"></div>
             <div className="content">
               <h1>Easter_Egg_Page</h1>
-              <p>Vous avez trouver la page d'Easter_Egg</p>
+              <p>Vous avez trouver la page d&apos;Easter_Egg</p>
             </div>
           </div>
         </div>
