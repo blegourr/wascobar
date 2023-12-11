@@ -5,9 +5,9 @@ import './first_layer.css'
 // import img
 import oscar from './assets/newpp.png'
 
-function first_layer_project_anglais() {
+function first_layer_project_dualitee() {
   return (
-    <div className='first_layer_project_anglais'>
+    <div className='first_layer_project_dualitee'>
       <div className='container'>
         <div className="titre">
           <h1>Proposé par Oscar</h1>
@@ -22,4 +22,4 @@ function first_layer_project_anglais() {
 }
 
 
-export default first_layer_project_anglais;
+export default first_layer_project_dualitee;

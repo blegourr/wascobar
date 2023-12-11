@@ -3,7 +3,7 @@ import Anglais from './assets/Anglais.jpg'
 function home_third_layer() {
   return (
     <div className='home_third_layer'>
-
+      <h1>Nos Projets </h1>
       <div className="groups revers">
         <p>hjehjhfi hfddddddd dddddd dddddd dddddddddd ddddddddd ddddddd dddddd dddddd dddd dddddddddd dddddd
           ddddddddddddd ddddddddddddd ddddddd ddddddddddddd ddddddd dddddd dddddddd ddddd
