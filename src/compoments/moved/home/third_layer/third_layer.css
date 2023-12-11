@@ -1,3 +1,10 @@
+.home_third_layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .home_third_layer .groups {
   display: flex;
   align-items: center;
