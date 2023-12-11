@@ -7,11 +7,11 @@
 
 .home_third_layer .groups img {
   margin: 0 0 0 5vw;
-  border-radius: 2.3vw ;
+  border-radius: 2.3vw;
 }
 
 .home_third_layer .groups.revers img {
-  margin:  0 5vw 0 0;
+  margin: 0 5vw 0 0;
 }
 
 .home_third_layer .groups p {
@@ -21,9 +21,33 @@
 .home_third_layer .groups.revers {
   flex-direction: row-reverse;
   margin-top: 5vw;
-  margin-bottom: 5vw;
+  margin-bottom: 6vw;
 }
 
 .home_third_layer p {
   max-width: 800px;
+}
+
+@media screen and (max-width: 1300px) {
+  .home_third_layer .groups.revers {
+    flex-direction: column-reverse; 
+  }
+
+  .home_third_layer .groups {
+    flex-direction: column-reverse;
+  }
+
+  .home_third_layer .groups.revers img {
+    margin: 0 0 3vw 0;
+    max-width: 60%;
+  }
+
+  .home_third_layer .groups img {
+    margin: 0 0 3vw 0;
+    max-width: 60%;
+  }
+  
+  .home_third_layer p {
+    font-size: 0.8rem;
+  }
 }
