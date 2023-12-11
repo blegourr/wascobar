@@ -67,11 +67,24 @@
   margin: 1.5vw;
 }
 
-#info-text {
-  display: none;
-}
+@media screen and (max-width: 1000px) {
 
-.paypal-hover:hover + #info-text {
-  display: block; /* Fait apparaître le texte d'information au survol du texte "virement PayPal" */
-  /* Ajoutez vos styles spécifiques pour le texte d'information ici */
+  .first_layer_page_soutiens {
+    height: unset;
+    margin: 15vw 0 25vw;
+  }
+
+  .first_layer_page_soutiens .container {
+    justify-content: center;
+    width: 90%;
+  }
+
+  .first_layer_page_soutiens .containerElement:first-child {
+    display: none;
+  }
+
+  .first_layer_page_soutiens .containerElement {
+    width: 90%;
+    text-align: center;
+  }
 }

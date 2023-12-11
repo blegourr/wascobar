@@ -44,10 +44,6 @@ function first_layer_page_soutiens() {
         </div>
         <div className="containerElement">
           <p>Unanimement, nous convenons que le moyen le plus efficace de nous apporter votre soutien n&apos;est pas de nous faire un <span className="paypal-hover"  onClick={() => handlePaypalHover()}>virement Paypal</span> mais de participer activement aux différentes étapes de notre projet, que ce soit en tant qu&apos;acteur, figurant, monteur, perchiste, cadreur, et bien d&apos;autres. Vous pouvez également nous rejoindre en direct sur notre chaîne Twitch ou partager vos idées et suggestions sur notre serveur Discord.</p>
-
-          <p className="paypal-info" id="info-text">
-            Plus d&apos;informations sur le virement PayPal ici...
-          </p>
         </div>
       </div>
     </div>
