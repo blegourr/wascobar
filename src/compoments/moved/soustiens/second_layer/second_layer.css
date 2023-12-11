@@ -1,4 +1,4 @@
-.First_layers_page_soutiens {
+.Second_layer_page_soutiens {
   margin-top: 5vw;
   min-height: 60vw;
   width: 100%;
@@ -8,11 +8,11 @@
   flex-direction: column;
 }
 
-.First_layers_page_soutiens .title h1 {
+.Second_layer_page_soutiens .title h1 {
   font-size: 3rem;
 }
 
-.First_layers_page_soutiens .containerElement {
+.Second_layer_page_soutiens .containerElement {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,29 +20,29 @@
   margin: 5vw;
 }
 
-.First_layers_page_soutiens .containerElement div {
+.Second_layer_page_soutiens .containerElement div {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
 
-.First_layers_page_soutiens .containerElement div:nth-child(2) {
+.Second_layer_page_soutiens .containerElement div:nth-child(2) {
   flex-direction: row-reverse;
 }
 
-.First_layers_page_soutiens .containerElement div div.SubContainer {
+.Second_layer_page_soutiens .containerElement div div.SubContainer {
   margin: 5vw;
   flex-direction: column;
   width: 75%;
   position: relative;
 }
 
-.First_layers_page_soutiens .containerElement div div.SubContainer:nth-child(2) {
+.Second_layer_page_soutiens .containerElement div div.SubContainer:nth-child(2) {
   width: 25%;
 }
 
-.First_layers_page_soutiens .containerElement div div.SubContainer p {
+.Second_layer_page_soutiens .containerElement div div.SubContainer p {
   margin-top: 2vw;
   font-size: 1rem;
   text-shadow: 0 0 0.5rem #000;
@@ -96,12 +96,12 @@
   }
 }
 
-.First_layers_page_soutiens .containerElement div div.SubContainer p:nth-child(1) {
+.Second_layer_page_soutiens .containerElement div div.SubContainer p:nth-child(1) {
   margin-top: 0;
   font-size: 1.5rem;
 }
 
-.First_layers_page_soutiens .containerElement div div.SubContainer svg {
+.Second_layer_page_soutiens .containerElement div div.SubContainer svg {
   position: absolute;
   width: 50%;
   animation: discordNotiflogo 4s infinite ease-in-out;
@@ -112,15 +112,15 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .First_layers_page_soutiens {
+  .Second_layer_page_soutiens {
     margin-top: 10vw;
   }
 
-  .First_layers_page_soutiens .containerElement div .SubContainer.svg {
+  .Second_layer_page_soutiens .containerElement div .SubContainer.svg {
     display: none;
   }
 
-  .First_layers_page_soutiens .containerElement div div.SubContainer {
+  .Second_layer_page_soutiens .containerElement div div.SubContainer {
     text-align: center;
   }
 }
@@ -128,11 +128,11 @@
 
 @media screen and (max-width: 680px) {
 
-  .First_layers_page_soutiens .title h1 {
+  .Second_layer_page_soutiens .title h1 {
     font-size: 2.5rem;
   }
 
-  .First_layers_page_soutiens .containerElement div div.SubContainer {
+  .Second_layer_page_soutiens .containerElement div div.SubContainer {
     width: 90%;
   }
 }
@@ -140,30 +140,30 @@
 
 @media screen and (max-width: 500px) {
 
-  .First_layers_page_soutiens .title h1 {
+  .Second_layer_page_soutiens .title h1 {
     font-size: 2rem;
   }
 
-  .First_layers_page_soutiens .containerElement div div.SubContainer p {
+  .Second_layer_page_soutiens .containerElement div div.SubContainer p {
     font-size: 0.8rem;
   }
 
-  .First_layers_page_soutiens .containerElement div div.SubContainer {
+  .Second_layer_page_soutiens .containerElement div div.SubContainer {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 310px) {
 
-  .First_layers_page_soutiens .title h1 {
+  .Second_layer_page_soutiens .title h1 {
     font-size: 1.8rem;
   }
 
-  .First_layers_page_soutiens .containerElement div div.SubContainer p {
+  .Second_layer_page_soutiens .containerElement div div.SubContainer p {
     font-size: 0.8rem;
   }
 
-  .First_layers_page_soutiens .containerElement div div.SubContainer {
+  .Second_layer_page_soutiens .containerElement div div.SubContainer {
     width: 90%;
   }
 }

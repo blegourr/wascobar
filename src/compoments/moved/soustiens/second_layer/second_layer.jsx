@@ -1,12 +1,12 @@
-import './first_layer.css'
+import './second_layer.css'
 import TrayNotif from './assets/trayNotif.jsx'
 
-function First_layers_page_soutiens() {
+function Second_layer_page_soutiens() {
 
   return (
-    <div className="First_layers_page_soutiens">
+    <div className="Second_layer_page_soutiens">
       <div className='title'>
-        <h1>Nous contacter :</h1>
+        <h1>Nous soutenir :</h1>
       </div>
       <div className="containerElement">
         <div>
@@ -53,4 +53,4 @@ function First_layers_page_soutiens() {
   )
 }
 
-export default First_layers_page_soutiens
+export default Second_layer_page_soutiens;
