@@ -11,7 +11,7 @@ function first_layer_page_soutiens() {
       <div className="containerElement">
         <div>
           <div className='SubContainer'>
-            <p>discord :</p>
+            <p>Discord :</p>
             <p>
               Nous vous ouvrons grand les portes de{' '}
               <a href="https://discord.gg/7Gc4HsfZTA" target="_blank" rel="noopener noreferrer">
