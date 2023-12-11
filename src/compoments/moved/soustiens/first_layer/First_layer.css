@@ -1,0 +1,90 @@
+.first_layer_page_soutiens {
+  height: 50vw;
+  max-height: 1500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first_layer_page_soutiens .container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.first_layer_page_soutiens .containerElement {
+  margin: 0 0.5vw;
+  position: relative;
+  width: 65%;
+}
+
+.first_layer_page_soutiens .containerElement:first-child {
+  width: 30%;
+  height: 25vw;
+}
+
+.first_layer_page_soutiens .containerElement img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 2.5rem #00000031;
+  cursor: pointer;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out, box-shadow 0.5s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.first_layer_page_soutiens .containerElement img:hover {
+  box-shadow: 0 0 2.5rem #151324;
+  transform: scale(1.01);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.first_layer_page_soutiens .containerElement img.active {
+  animation: rotate 2s;
+  animation-iteration-count: 1;
+  transition: opacity 0.5s ease-in-out, box-shadow 0.5s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.first_layer_page_soutiens .containerElement img.activeInversion {
+  animation: rotate 2s ease-in-out reverse;
+}
+
+.first_layer_page_soutiens .containerElement p {
+  text-shadow: 0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.5);
+  margin: 1.5vw;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .first_layer_page_soutiens {
+    height: unset;
+    margin: 15vw 0 25vw;
+  }
+
+  .first_layer_page_soutiens .container {
+    justify-content: center;
+    width: 90%;
+  }
+
+  .first_layer_page_soutiens .containerElement:first-child {
+    display: none;
+  }
+
+  .first_layer_page_soutiens .containerElement {
+    width: 90%;
+    text-align: center;
+  }
+}
