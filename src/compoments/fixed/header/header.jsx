@@ -1,15 +1,19 @@
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './header.css'
 
 
 // import d'image
 import Logo from './assets/logo.jpg'
-import { useState } from 'react';
+
+// import élément
+import Background from './background';
 
 function HeaderCompongnement() {
   const nav = useNavigate();
-
   const [burgerActive, setBurgerActive] = useState(false);
+  const [logoClickCount, setLogoClickCount] = useState(0);
+  const logoRef = useRef(null);
 
   const toggleBurger = () => {
     setBurgerActive(!burgerActive);
@@ -22,12 +26,33 @@ function HeaderCompongnement() {
     }
   };
 
+  const handleLogoClick = () => {
+    setLogoClickCount((prevCount) => prevCount + 1);
+    nav('/');
+  };
+
+  const handleOutsideClick = (event) => {
+    if (logoRef.current && !logoRef.current.contains(event.target)) {
+      // Click occurred outside the logo, reset the click count
+      setLogoClickCount(0);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, []);
+
 
   return (
     <div className={`HeaderCompongnement`}>
+      <Background active={logoClickCount}/>
       <div className={`container ${burgerActive ? 'active' : ''}`}>
-        <div className="containertitle" >
-          <img src={Logo} alt="" onClick={() => nav("/")} />
+        <div className="containertitle" ref={logoRef}>
+          <img src={Logo} alt="" onClick={handleLogoClick} />
           <p onClick={() => nav("/")}>wascobar</p>
         </div>
 
