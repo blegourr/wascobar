@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
+  position: relative;
 }
 
 .Second_layer_page_soutiens .title h1 {

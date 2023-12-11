@@ -1,0 +1,85 @@
+.HeaderCompongnement .particlesContainerBackground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.HeaderCompongnement .particlesContainerBackground.active {
+  opacity: 1;
+}
+
+.HeaderCompongnement .linearBackground {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg, #020010 0%, rgba(2, 0, 16, 0.37) 52.6%, #020010 100%);
+  position: absolute;
+}
+
+.HeaderCompongnement .particlesContainer {
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: -1;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(180px);
+  }
+}
+
+@keyframes floatReverse {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-180px);
+  }
+}
+
+@keyframes float2 {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(280px);
+  }
+}
+
+@keyframes floatReverse2 {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-280px);
+  }
+}
+
+.HeaderCompongnement .particlesContainer .particle {
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  animation: float 3s infinite alternate;
+  position: absolute;
+  border-radius: 50%;
+}
