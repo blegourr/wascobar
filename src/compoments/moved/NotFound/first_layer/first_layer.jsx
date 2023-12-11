@@ -62,7 +62,7 @@ function FirstLayerNotFound() {
         <p>On dirait bien que ce film n&apos;existe pas</p>
         <button onClick={() => nav("/")}>Retour à l&apos;accueil</button>
       </div>
-
+      <div className="scanline"></div>
       <canvas id="canvas"></canvas>
     </div>
   )
