@@ -21,24 +21,6 @@ function FirstLayerEasterEgg() {
             </div>
           </div>
         </div>
-        <div className="card">
-          <div className="content-card">
-            <div className="background"></div>
-            <div className="content">
-              <h1>Easter_Egg_Page</h1>
-              <p>Vous avez trouver la page d&apos;Easter_Egg</p>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="content-card">
-            <div className="background"></div>
-            <div className="content">
-              <h1>Easter_Egg_Page</h1>
-              <p>Vous avez trouver la page d&apos;Easter_Egg</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   )
