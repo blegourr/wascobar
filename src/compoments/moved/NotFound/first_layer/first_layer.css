@@ -93,6 +93,10 @@
   pointer-events: none;
 }
 
+.first_layer_404 .scanline.retard {
+  animation-delay: -10s;
+}
+
 @keyframes scanline {
   0% {
     bottom: 100%;
