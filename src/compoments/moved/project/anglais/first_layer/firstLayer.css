@@ -35,7 +35,7 @@
   width: 15vw;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
   .first_layer_project_anglais .desc {
     display: flex;
     flex-direction: column;
@@ -47,10 +47,11 @@
 
   .first_layer_project_anglais .desc p {
     font-size: 1.3rem;
+    width: 90%;
   }
 
   .first_layer_project_anglais {
-    height: unset;
+    height: 60vw
   }
 
 
@@ -72,7 +73,7 @@
   }
 
   .first_layer_project_anglais {
-    height: unset;
+    height: 50vw
   }
 
 
@@ -94,14 +95,14 @@
   }
 
   .first_layer_project_anglais {
-    height: unset;
+    height: 55vw
   }
 
 
 
 }
 
-@media screen and (max-width: 306px) {
+@media screen and (max-width: 330px) {
   .first_layer_project_anglais .desc {
     display: flex;
     flex-direction: column;
@@ -116,7 +117,7 @@
   }
 
   .first_layer_project_anglais {
-    height: unset;
+    height: 40vw
   }
 
   .first_layer_project_anglais .container .titre h1 {
