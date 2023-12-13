@@ -26,7 +26,6 @@ function first_layer_page_soutiens() {
   }
 
   const handlePaypalHover = () => {
-    console.log("bonjour")
     let audio = new Audio(paypal);
     audio.play();
   };
