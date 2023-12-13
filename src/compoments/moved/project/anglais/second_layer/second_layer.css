@@ -38,6 +38,14 @@
     font-size: 1.2rem;
   }
 
+  .second_layer_projet_anglais .info {
+    flex-direction: column;
+  }
+
+  .second_layer_projet_anglais .info.reverse {
+    flex-direction: column-reverse;
+  }
+
 }
   
 @media screen and (max-width: 915px) {
