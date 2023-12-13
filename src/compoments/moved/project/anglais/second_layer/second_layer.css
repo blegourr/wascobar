@@ -31,15 +31,18 @@
   .second_layer_projet_anglais .info img {
     width: 200px;
     height: 200px;
+    margin-bottom: 20px;
 
   }
 
   .second_layer_projet_anglais .info p {
     font-size: 1.2rem;
+
   }
 
   .second_layer_projet_anglais .info {
     flex-direction: column;
+    height: 40vw;
   }
 
   .second_layer_projet_anglais .info.reverse {
@@ -52,21 +55,23 @@
   .second_layer_projet_anglais .info img {
     width: 150px;
     height: 150px;
-    margin: 0 30px
+    margin-bottom: 20px;
 
   }
 
   .second_layer_projet_anglais .info p {
     font-size: 0.8rem;
-    max-width: 700px
+    max-width: 700px;
+    width: 90%;
+    
   }
 
 }
 
-@media screen and (max-width: 515px) {
+@media screen and (max-width: 700px) {
   .second_layer_projet_anglais .info img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     margin: 0 30px
 
   }
