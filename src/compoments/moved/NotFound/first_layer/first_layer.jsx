@@ -63,6 +63,7 @@ function FirstLayerNotFound() {
         <button onClick={() => nav("/")}>Retour à l&apos;accueil</button>
       </div>
       <div className="scanline"></div>
+      <div className="scanline retard"></div>
       <canvas id="canvas"></canvas>
     </div>
   )
