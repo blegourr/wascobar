@@ -14,7 +14,7 @@ function first_layer_project_dualitee() {
         </div>
         <div className="desc">
           <img src={oscar} alt="" />
-          <p>blablablablablabla blalablablablablablablablab lablablablzab lazblablablablablablabla blablablablablabl alablabla blablablablablab lablablablzablazblablab lablablablablablablab lablablablalablablabla blablabl ablablablab lablzablazblablablablablabl ablablab lablablablablalablablabla blablablab lablablablabl zablazblab labl ablabl</p>
+          <p>Dans ce projet film, on s'embarque dans ce qui ressemble plus a une experimentation qu'a un vrai court métrage. Il a pour but de privélégier le métaphorique, au détriment de la compréhension générale de l'oeuvre</p>
         </div>
       </div>
     </div>

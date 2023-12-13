@@ -58,3 +58,73 @@
 }
 
 
+@media screen and (max-width: 915px) {
+  .first_layer_project_dualitee .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+  }
+
+  .first_layer_project_dualitee .desc p {
+    font-size: 0.7rem;
+  }
+
+  .first_layer_project_dualitee {
+    height: unset;
+  }
+
+
+
+}
+
+@media screen and (max-width: 515px) {
+  .first_layer_project_dualitee .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+  }
+
+  .first_layer_project_dualitee .desc p {
+    font-size: 0.5rem;
+  }
+
+  .first_layer_project_dualitee {
+    height: unset;
+  }
+
+
+
+}
+
+@media screen and (max-width: 306px) {
+  .first_layer_project_dualitee .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+  }
+
+  .first_layer_project_dualitee .desc p {
+    font-size: 0.3rem;
+  }
+
+  .first_layer_project_dualitee {
+    height: unset;
+  }
+
+  .first_layer_project_dualitee .container .titre h1 {
+    font-size: 1rem;
+  }
+  
+
+
+
+}
