@@ -1,114 +1,66 @@
-.second_layer_projet_anglais {
-   width: 100%;
+.second_layer_projet_Film {
+  width: 100%;
   background-color: #020010;
 
 }
 
-.second_layer_projet_anglais .info {
-  /* width: 100%; */
-  height: 35vw;
+.second_layer_projet_Film .info {
+  /* height: 35vw; */
   background-color: #020010;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  margin: 7.5rem 0;
 }
 
-.second_layer_projet_anglais .info img {
+.second_layer_projet_Film .info.reverse {
+  flex-direction: row-reverse;
+}
+
+.second_layer_projet_Film .info img {
   border-radius: 20px;
   object-fit: cover;
   width: 300px;
   height: 300px;
-  margin: 0 100px; 
+  margin: 0 100px;
 
 }
 
-.second_layer_projet_anglais .info p {
+.second_layer_projet_Film .info p {
   max-width: 500px;
   text-align: center;
 }
 
 @media screen and (max-width: 1300px) {
-  .second_layer_projet_anglais .info img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
-
-  }
-
-  .second_layer_projet_anglais .info p {
-    font-size: 1.2rem;
-
-  }
-
-  .second_layer_projet_anglais .info {
+  .second_layer_projet_Film .info {
     flex-direction: column;
-    height: 40vw;
   }
 
-  .second_layer_projet_anglais .info.reverse {
-    flex-direction: column-reverse;
+  .second_layer_projet_Film .info.reverse {
+    flex-direction: column;
   }
 
-}
-  
-@media screen and (max-width: 915px) {
-  .second_layer_projet_anglais .info img {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 20px;
+  .second_layer_projet_Film .info img {
+    margin: 2.5rem 0;
 
   }
 
-  .second_layer_projet_anglais .info p {
-    font-size: 0.8rem;
-    max-width: 700px;
-    width: 90%;
-    
+  .second_layer_projet_Film .info p {
+    max-width: unset;
+    width: 80%;
   }
-
 }
 
-@media screen and (max-width: 700px) {
-  .second_layer_projet_anglais .info img {
-    width: 100px;
-    height: 100px;
-    margin: 0 30px
+@media screen and (max-width: 500px) {
 
+
+  .second_layer_projet_Film .info img {
+    width: 60vw;
+    height: 60vw;
   }
 
-  .second_layer_projet_anglais .info p {
-    font-size: 0.5rem;
-    max-width: 700px
+  .second_layer_projet_Film .info p {
+    max-width: unset;
+    width: 80%;
   }
-
-}
-
-@media screen and (max-width: 515px) {
-  .second_layer_projet_anglais .info img {
-    width: 50px;
-    height: 50px;
-    margin: 0 30px
-
-  }
-
-  .second_layer_projet_anglais .info p {
-    font-size: 0.5rem;
-    max-width: 700px
-  }
-
-}
-
-@media screen and (max-width: 306px) {
-  .second_layer_projet_anglais .info img {
-    width: 40px;
-    height: 40px;
-    margin: 0 30px
-
-  }
-
-  .second_layer_projet_anglais .info p {
-    font-size: 0.4rem;
-    max-width: 700px
-  }
-
 }

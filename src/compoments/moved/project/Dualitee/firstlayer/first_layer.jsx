@@ -1,13 +1,9 @@
-// import css
-import './first_layer.css'
-
-
 // import img
 import oscar from './assets/newpp.png'
 
 function first_layer_project_dualitee() {
   return (
-    <div className='first_layer_project_dualitee'>
+    <div className='first_layer_project_Film'>
       <div className='container'>
         <div className="titre">
           <h1>Proposé par Oscar</h1>
