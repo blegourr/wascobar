@@ -58,11 +58,14 @@ function FirstLayerNotFound() {
   return (
     <div className="first_layer_404">
       <div className="element">
-        <h1>404</h1>
-        <p>On dirait bien que ce film n&apos;existe pas</p>
+        <div className="contentGlitch">
+          <h1 className='text' data-text="404" >404</h1>
+          <p className='text'  data-text="On dirait bien que ce film n'existe pas">On dirait bien que ce film n&apos;existe pas</p>
+        </div>
         <button onClick={() => nav("/")}>Retour à l&apos;accueil</button>
       </div>
       <div className="scanline"></div>
+      <div className="scanline retard"></div>
       <canvas id="canvas"></canvas>
     </div>
   )
