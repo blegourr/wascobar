@@ -5,14 +5,14 @@ import baba2 from './assets/baptiste2.jpg'
 
 function second_layer() {
   return (
-    <div className='second_layer_projet_anglais'>
+    <div className='second_layer_projet_Film'>
       <div className="info">
         <img src={baba2} alt="" />
         <p>Dans ce court métrage, on suit l&apos;histoire d&apos;un personnage lambda, et sa chute sans fin vers une folie qui prendra le dessus de son esprit, en mettant l&apos;accent sur la personnification de cette folie,</p>
       </div>
-      <div className="info">
-        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaaaaaa aaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaa aaaaa aaaaa a a a a aaaaa aaa aaa aaaaa aaa aaa aaa aaaaa aaa aa aaaaaa aa</p>
+      <div className="info reverse">
         <img src={baba2} alt="" />
+        <p>Dans ce court métrage, on suit l&apos;histoire d&apos;un personnage lambda, et sa chute sans fin vers une folie qui prendra le dessus de son esprit, en mettant l&apos;accent sur la personnification de cette folie,</p>
       </div>
     </div>
   );
