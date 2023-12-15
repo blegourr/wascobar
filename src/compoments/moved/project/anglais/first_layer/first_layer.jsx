@@ -14,7 +14,7 @@ function first_layer_project_anglais() {
         </div>
         <div className="desc">
           <img src={baba} alt="" />
-          <p>blablablablablabla blalablablablablablablablab lablablablzab lazblablablablablablabla blablablablablabl alablabla blablablablablab lablablablzablazblablab lablablablablablablab lablablablalablablabla blablabl ablablablab lablzablazblablablablablabl ablablab lablablablablalablablabla blablablab lablablablabl zablazblab labl ablabl</p>
+          <p>blablablablablabla blalablablablablablablablab lablablablzab lazblablablablablablabla blablablablablabl alablabla blablablablablab lablablablzablazblablab  lablablablzab lazblablablablablablabla blablablablablabl lablablablzab lazblablablablablablabla blablablablablabl lazblablablablablablabla blablablablablabl lazblablablablablablabla blablablablablabl</p>
         </div>
       </div>
     </div>
