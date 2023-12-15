@@ -1,4 +1,4 @@
-.first_layer_project_anglais {
+.first_layer_project_Film {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +6,7 @@
   padding: 7.5rem 0;
 }
 
-.first_layer_project_anglais .container {
+.first_layer_project_Film .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,18 +14,18 @@
   width: 70%;
 }
 
-.first_layer_project_anglais h1 {
+.first_layer_project_Film h1 {
   color: #fff;
   font-size : 1.7rem
 }
 
-.first_layer_project_anglais .desc {
+.first_layer_project_Film .desc {
   display: flex ;
   align-items: center;
   justify-content: center;
 }
 
-.first_layer_project_anglais .desc img {
+.first_layer_project_Film .desc img {
   margin: 2vw;
   border-radius: 50%;
   object-fit: cover;
@@ -34,33 +34,34 @@
 }
 
 @media screen and (max-width:1300px) {
-  .first_layer_project_anglais .desc {
+  .first_layer_project_Film .desc {
     flex-direction: column;
     margin-top: 5rem;
   }
 
-  .first_layer_project_anglais  p {
+  .first_layer_project_Film  p {
     text-align: center;
   }
 
- .first_layer_project_anglais .desc img {
+ .first_layer_project_Film .desc img {
   height: 20vw;
-  width: 20vw
+  width: 20vw;
+  margin-bottom: 2.5rem;
  }
 
 }
 
 
 @media screen and (max-width:500px) {
-  .first_layer_project_anglais h1 {
+  .first_layer_project_Film h1 {
     font-size: 1.5rem;
   }
 
-  .first_layer_project_anglais  p {
+  .first_layer_project_Film  p {
     font-size: 0.9rem;
   }
 
-  .first_layer_project_anglais .desc img {
+  .first_layer_project_Film .desc img {
     height: 50vw;
     width: 50vw
    }
@@ -69,7 +70,7 @@
 }
 
 @media screen and (max-width:400px) {
-  .first_layer_project_anglais h1 {
+  .first_layer_project_Film h1 {
     font-size: 1.4rem;
   }
   
@@ -78,15 +79,15 @@
 
 
 @media screen and (max-width:350px) {
-  .first_layer_project_anglais h1 {
+  .first_layer_project_Film h1 {
     font-size: 1.2rem;
   }
 
-  .first_layer_project_anglais p {
+  .first_layer_project_Film p {
     font-size: 0.8rem;
   }
 
-  .first_layer_project_anglais .desc img {
+  .first_layer_project_Film .desc img {
     height: 45vw;
     width: 45vw
    }
@@ -94,7 +95,7 @@
 
 
 @media screen and (max-width:300px) {
-  .first_layer_project_anglais h1 {
+  .first_layer_project_Film h1 {
     font-size: 1rem;
   }
 }
