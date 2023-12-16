@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 10rem 0;
 }
 
 .first_layer_easterEgg .containerCards {
@@ -12,11 +13,59 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 2.5rem;
 }
 
 .first_layer_easterEgg .containerCards .card{
+  width: 25rem;
+  height: 30rem;
+  margin: 2.5rem;
+  border-radius: 1rem;
+}
+
+.first_layer_easterEgg .containerCards .card .content-card {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(155deg, #13075E 0%, rgba(10, 3, 53, 0.20) 100%, rgba(10, 3, 53, 0.37) 100%);
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.5s ease-in-out, transform 0.25s ease-in-out;
+  will-change: contents;
+}
+
+.first_layer_easterEgg .containerCards .card .content-card.notFound {
+  background: linear-gradient(155deg, #13075e58 0%, rgba(10, 3, 53, 0.218) 100%);
+}
+
+.first_layer_easterEgg .containerCards .card .content-card:hover {
+  transition: transition 0s linear, box-shadow 0.5s ease-in-out;
+}
+
+.first_layer_easterEgg .containerCards .card .content-card .background {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background: #474cb3;
+  filter: blur(180px);
+  border-radius: 300px;
+  opacity: 0;
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  mix-blend-mode: soft-light;
+  will-change: contents;
+  z-index: -1;
+}
+
+.first_layer_easterEgg .containerCards .card:hover .content-card .background {
+  opacity: 0.85;
+}
+
+.first_layer_easterEgg .containerCards .card:hover .content-card .background.notFound {
+  opacity: 0;
 }

@@ -1,12 +1,14 @@
+import PropTypes from 'prop-types';
+
 import HeaderCompongnement from '../compoments/fixed/header/header';
 // import SecondLayer from '../compoments/moved/home/second_layer/second_layer';
 // import ThirdLayer from '../compoments/moved/home/third_layer/third_layer';
 import FooterCompongnement from '../compoments/fixed/footer/Footer';
 
-function MentionsLegals() {
+function MentionsLegals({data}) {
   return (
     <div className='MentionsLegals'>
-        <HeaderCompongnement/>
+        <HeaderCompongnement data={data}/>
         {/* header */}
         {/* <SecondLayer /> */}
         {/* Third */}
@@ -19,5 +21,8 @@ function MentionsLegals() {
   );
 }
 
+MentionsLegals.propTypes = {
+  data: PropTypes.object.isRequired,
+}
 
 export default MentionsLegals;
