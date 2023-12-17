@@ -11,6 +11,7 @@ import NotFound from './page/NotFound';
 import MentionsLegals from './page/MentionsLegals';
 import EasterEgg from './page/EasterEgg';
 import Soutiens from './page/Soutiens';
+// import Contact from './page/Contact';
 import { useEffect, useState } from 'react';
 import EasterEggPopup from './compoments/fixed/popup/EasterEgg/EasterEggPopup';
 
@@ -96,6 +97,13 @@ function App() {
             <Soutiens data={data} setData={setData} setFoundName={setFoundName} />
           }
         />
+        {/* <Route
+          path='/Contact'
+          exact
+          element={
+            <Contact data={data} setData={setData} />
+          }
+        /> */}
         <Route
           path='/Mentions_legal'
           exact
@@ -103,7 +111,6 @@ function App() {
             <MentionsLegals data={data} setData={setData} setFoundName={setFoundName} />
           }
         />
-
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
