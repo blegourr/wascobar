@@ -10,7 +10,7 @@ import Logo from './assets/logo.webp'
 // import élément
 import Background from './background';
 
-function HeaderCompongnement({ data, setData }) {
+function HeaderCompongnement({ data, setData, setFoundName }) {
   const nav = useNavigate();
   const [burgerActive, setBurgerActive] = useState(false);
   const [logoClickCount, setLogoClickCount] = useState(0);
@@ -48,15 +48,17 @@ function HeaderCompongnement({ data, setData }) {
   }, []);
 
   useEffect(() => {
-    if (!data.easterEgg.HeaderCompongnement.found && logoClickCount >= 10) {
+    if (!data.easterEgg.buBul.found && logoClickCount >= 10) {
       setData(prevData => {
         const newData = { ...prevData };
-        newData.easterEgg.HeaderCompongnement.found = true;
+        newData.easterEgg.buBul.found = true;
         return newData;
       });
 
+      setFoundName('buBul')
+
     }
-  }, [logoClickCount, setData, data.easterEgg.HeaderCompongnement]);
+  }, [logoClickCount, setData, setFoundName, data.easterEgg.buBul]);
 
 
 
@@ -101,6 +103,7 @@ function HeaderCompongnement({ data, setData }) {
 HeaderCompongnement.propTypes = {
   data: PropTypes.object.isRequired,
   setData: PropTypes.func.isRequired,
+  setFoundName : PropTypes.func.isRequired,
 }
 
 export default HeaderCompongnement;

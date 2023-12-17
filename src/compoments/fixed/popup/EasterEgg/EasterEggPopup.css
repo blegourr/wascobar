@@ -1,0 +1,84 @@
+.EasterEggPopup {
+  position: absolute;
+  top: 8.5vw;
+  left: -1rem;
+  height: 5.5rem;
+  width: 30rem;
+  /* overflow: hidden; */
+  text-align: center;
+  transform: translate(-100%);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.EasterEggPopup.active {
+  transform: translate(0);
+}
+
+.EasterEggPopup .container {
+  height: 100%;
+  width: 30rem;
+  background: linear-gradient(155deg, #5844d69b 0%, rgba(21, 10, 90, 0.718) 100%, rgba(10, 3, 53, 0.728) 100%);
+  transform: skewX(-15deg);
+  position: relative;
+  overflow: hidden;
+}
+
+.EasterEggPopup .container .message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 80%;
+}
+
+.EasterEggPopup.active .container .message.messageCount {
+  animation-name: messageCount;
+  animation-duration: 0.5s;
+  animation-delay: 3.5s;
+  animation-fill-mode: both;
+  opacity: 0;
+  transform: translateY(100%) translateX(-50%);
+}
+
+
+.EasterEggPopup.active .container .message.mesageFound {
+  animation-name: mesageFound;
+  animation-duration: 0.5s;
+  animation-delay: 3.5s;
+  animation-fill-mode: both;
+  opacity: 1;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+@keyframes messageCount {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) translateX(-50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-50%) translateX(-50%);
+  }
+}
+
+@keyframes mesageFound {
+  0% {
+    opacity: 1;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(100%) translateX(-50%);
+  }
+}
+
+
+/* 
+@media screen and (max-width: 1000px) {
+  .EasterEggPopup {
+    top: 25vw;
+  }
+
+} */
