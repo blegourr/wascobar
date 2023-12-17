@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './header.css'
+import PropTypes from 'prop-types';
 
+import './header.css'
 
 // import d'image
 import Logo from './assets/logo.jpg'
@@ -9,7 +10,7 @@ import Logo from './assets/logo.jpg'
 // import élément
 import Background from './background';
 
-function HeaderCompongnement() {
+function HeaderCompongnement({ data, setData }) {
   const nav = useNavigate();
   const [burgerActive, setBurgerActive] = useState(false);
   const [logoClickCount, setLogoClickCount] = useState(0);
@@ -46,10 +47,22 @@ function HeaderCompongnement() {
     };
   }, []);
 
+  useEffect(() => {
+    if (!data.easterEgg.HeaderCompongnement.found && logoClickCount >= 10) {
+      setData(prevData => {
+        const newData = { ...prevData };
+        newData.easterEgg.HeaderCompongnement.found = true;
+        return newData;
+      });
+
+    }
+  }, [logoClickCount, setData, data.easterEgg.HeaderCompongnement]);
+
+
 
   return (
     <div className={`HeaderCompongnement`}>
-      <Background active={logoClickCount}/>
+      <Background active={logoClickCount >= 10} />
       <div className={`container ${burgerActive ? 'active' : ''}`}>
         <div className="containertitle" ref={logoRef}>
           <img src={Logo} alt="" onClick={handleLogoClick} />
@@ -83,6 +96,11 @@ function HeaderCompongnement() {
       </div>
     </div>
   );
+}
+
+HeaderCompongnement.propTypes = {
+  data: PropTypes.object.isRequired,
+  setData: PropTypes.func.isRequired,
 }
 
 export default HeaderCompongnement;
