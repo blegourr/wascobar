@@ -11,6 +11,7 @@ import NotFound from './page/NotFound';
 import MentionsLegals from './page/MentionsLegals';
 import EasterEgg from './page/EasterEgg';
 import Soutiens from './page/Soutiens';
+// import Contact from './page/Contact';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -40,8 +41,7 @@ function App() {
   useEffect(() => {
     localStorage.setItem('easterEggData', JSON.stringify(data));
   }, [data])
-
-
+  
   return (
     <BrowserRouter>
       <Routes>
@@ -71,6 +71,7 @@ function App() {
           exact
           element={
             <EasterEgg data={data} setData={setData} />
+
           }
         />
         <Route
@@ -80,6 +81,13 @@ function App() {
             <Soutiens data={data} setData={setData} />
           }
         />
+        {/* <Route
+          path='/Contact'
+          exact
+          element={
+            <Contact data={data} setData={setData} />
+          }
+        /> */}
         <Route
           path='/Mentions_legal'
           exact
@@ -87,7 +95,6 @@ function App() {
             <MentionsLegals data={data} setData={setData} />
           }
         />
-
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
