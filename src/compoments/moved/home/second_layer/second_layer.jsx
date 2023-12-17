@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router';
-import Anglais from './assets/Anglais.jpg'
-import Romance from './assets/Romance.jpg'
+import Anglais from './assets/Anglais.webp'
+import Romance from './assets/Romance.webp'
 import './second_layer.css'
 
 function HomeSecondLayers() {

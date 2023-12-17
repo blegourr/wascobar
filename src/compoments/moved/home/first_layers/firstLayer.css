@@ -2,6 +2,9 @@
   width: 100%;
   height: 45vw;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .first_layer_Home .background {
@@ -50,4 +53,22 @@
   height: 100%;
   width: 100%;
   border-radius: 50%;
+}
+
+@media screen and (max-width:1300px) {
+  .first_layer_Home .content .contentImg {
+    display: none;
+  }
+
+  .first_layer_Home .content {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width:1000px) {
+  .first_layer_Home {
+    height: 85vw;
+  }
+
 }

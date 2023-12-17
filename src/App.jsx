@@ -13,72 +13,88 @@ import EasterEgg from './page/EasterEgg';
 import Soutiens from './page/Soutiens';
 // import Contact from './page/Contact';
 import { useEffect, useState } from 'react';
+import EasterEggPopup from './compoments/fixed/popup/EasterEgg/EasterEggPopup';
 
 function App() {
   const storedData = localStorage.getItem('easterEggData');
-  const initialData = storedData ? JSON.parse(storedData) : {
+  const storedDataVersions = localStorage.getItem('DataVersions');
+  let versionInegual = false
+  
+  const [foundName, setFoundName] = useState('');
+  const version = "0";
+  const updatedData = {
     easterEgg: {
-      HeaderCompongnement: {
-        name: 'BuBul',
+      buBul: {
+        name: 'buBul',
         description: 'Vous avez trouvé les bulles, mais avez-vous trouvé Bubul ?',
         found: false,
       },
       ohhhhhhhhNonnnnnn: {
-        name: 'Oh Non',
-        description: 'Ohhhhhhhh Nonnnnnn tu as trouver mon secrets',
+        name: 'OhhhhNonnnnn',
+        description: 'Ohhhhhhhh Nonnnnnn tu as trouvé mon secret',
         found: false,
       },
       paypal: {
         name: 'paypal',
-        description: 'Il semblerais que tu sais sur qu\'elle page se cache notre paypal mais pourras tu le trouver ?',
+        description: 'Il semble que tu saches sur quelle page se cache notre Paypal, mais pourras-tu le trouver ?',
         found: false,
       },
     }
   };
 
-  const [data, setData] = useState(initialData);
+  if (storedDataVersions !== version) {
+    versionInegual = true;
+    localStorage.setItem('easterEggData', JSON.stringify(updatedData));
+    localStorage.setItem('DataVersions', version);
+  }
+
+  const [data, setData] = useState(versionInegual ? updatedData : JSON.parse(storedData));
 
   useEffect(() => {
     localStorage.setItem('easterEggData', JSON.stringify(data));
-  }, [data])
+  }, [data]);
   
+  // if (!data) {
+  //   return null; // or you can render a loading state or a default message
+  // }
+
   return (
     <BrowserRouter>
+      <EasterEggPopup foundName={foundName} data={data} />
       <Routes>
         <Route
           path='/'
           exact
           element={
-            <Home data={data} setData={setData} />
+            <Home data={data} setData={setData} setFoundName={setFoundName} />
           }
         />
         <Route
           path='/Projets/Anglais'
           exact
           element={
-            <Anglais data={data} setData={setData} />
+            <Anglais data={data} setData={setData} setFoundName={setFoundName} />
           }
         />
         <Route
           path='/Projets/Dualite'
           exact
           element={
-            <Dualite data={data} setData={setData} />
+            <Dualite data={data} setData={setData} setFoundName={setFoundName} />
           }
         />
         <Route
           path='/Easter_egg'
           exact
           element={
-            <EasterEgg data={data} setData={setData} />
-
+            <EasterEgg data={data} setData={setData} setFoundName={setFoundName} />
           }
         />
         <Route
           path='/Soutiens'
           exact
           element={
-            <Soutiens data={data} setData={setData} />
+            <Soutiens data={data} setData={setData} setFoundName={setFoundName} />
           }
         />
         {/* <Route
@@ -92,7 +108,7 @@ function App() {
           path='/Mentions_legal'
           exact
           element={
-            <MentionsLegals data={data} setData={setData} />
+            <MentionsLegals data={data} setData={setData} setFoundName={setFoundName} />
           }
         />
         <Route path="*" element={<NotFound />} />

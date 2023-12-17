@@ -4,7 +4,6 @@ function PageNotFound() {
     return (
       <div className='PageNotFound'>
         <FirstLayer />
-
       </div>
     );
   }
