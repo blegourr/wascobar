@@ -5,7 +5,7 @@ import './firstLayer.css'
 
 // import assets
 import video from './assets/V1.mp4'
-import logo from '../../../fixed/header/assets/logo.jpg'
+import logo from '../../../fixed/header/assets/logo.webp'
 
 
 function First_layer_Home() {

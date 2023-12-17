@@ -1,6 +1,6 @@
 import './third_layer.css'
-import Anglais from './assets/Anglais.jpg'
-import MayoCherie from './assets/mayoCherie.jpg'
+import Anglais from './assets/mayoCherie.webp'
+import MayoCherie from './assets/mayoCherie.webp'
 
 function home_third_layer() {
   return (
