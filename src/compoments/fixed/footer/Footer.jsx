@@ -4,7 +4,7 @@ import Wave from './compoments/wave';
 
 
 // import d'image
-import Logo from './assets/logo.jpg'
+import Logo from '../header/assets/logo.webp'
 
 function FooterCompongnement() {
   const nav = useNavigate();
