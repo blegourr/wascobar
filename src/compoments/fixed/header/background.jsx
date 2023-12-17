@@ -28,7 +28,7 @@ const Background = ({ active }) => {
     }
   }, []);
 
-  return <div className={`particlesContainerBackground ${active >= 10 && 'active'}`}>
+  return <div className={`particlesContainerBackground ${active && 'active'}`}>
     <div className="linearBackground"></div>
     <div className="particlesContainer"></div>
   </div>;

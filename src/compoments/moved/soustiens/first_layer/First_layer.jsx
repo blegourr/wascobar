@@ -1,9 +1,13 @@
+import PropTypes from 'prop-types';
+
 import './First_layer.css';
+
 import wascobar from '../../../fixed/header/assets/logo.jpg'
+
 import audioOhhhhNonnn from './assets/ohhhhhhhhNonnnnnn.mp3'
 import paypal from './assets/paypal.mp3'
 
-function first_layer_page_soutiens() {
+function first_layer_page_soutiens({data, setData}) {
   const handleContextWawcobar = (event) => {
     event.preventDefault();
     let audio = new Audio(audioOhhhhNonnn);
@@ -14,6 +18,14 @@ function first_layer_page_soutiens() {
     element.addEventListener("animationend", () => {
       element.classList.remove('activeInversion')
     })
+
+    if (!data.easterEgg.ohhhhhhhhNonnnnnn.found) {
+      setData(prevData => {
+        const newData = { ...prevData };
+        newData.easterEgg.ohhhhhhhhNonnnnnn.found = true;
+        return newData;
+      });
+    }
   }
 
   const handleClickWawcobar = (event) => {
@@ -26,9 +38,16 @@ function first_layer_page_soutiens() {
   }
 
   const handlePaypalHover = () => {
-    console.log("bonjour")
     let audio = new Audio(paypal);
     audio.play();
+
+    if (!data.easterEgg.paypal.found) {
+      setData(prevData => {
+        const newData = { ...prevData };
+        newData.easterEgg.paypal.found = true;
+        return newData;
+      });
+    }
   };
 
   return (
@@ -48,6 +67,11 @@ function first_layer_page_soutiens() {
       </div>
     </div>
   )
+}
+
+first_layer_page_soutiens.propTypes = {
+  data: PropTypes.object.isRequired,
+  setData : PropTypes.func.isRequired,
 }
 
 export default first_layer_page_soutiens;

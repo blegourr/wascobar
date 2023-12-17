@@ -53,18 +53,13 @@ function Second_layer_page_soutiens() {
             <p>Twitch :</p>
             <p>
               Vous savez,{' '}
-              <a href="mailto:contactwascobar@gmail.com" rel="noopener noreferrer">
-                notre email
+              <a href="https://www.twitch.tv/tv_wyatt/" target="_blank" rel="noopener noreferrer">
+                notre Twitch
               </a>{' '}
-              est un peu comme un super-héros, toujours prêt à sauver de nouveaux projets de l&apos;oubli ! Si vous avez un plan secret pour un projet, une folle envie de nous aider, n&apos;hésitez pas à{' '}
-              <a href="mailto:contactwascobar@gmail.com" rel="noopener noreferrer">
-                nous contacter
-              </a>
-              . Notre email est là pour transformer vos idées en un réel film, séquence après séquence.
-            </p>
+              est un bon moyen de nous suivre, voir l&apos;avancer des projects ! Mais vous pouvez aussi y participer via le tchat ! Et surtout n&apos;oublié pas de claquer votre prime !</p>
           </div>
           <div className='SubContainer svg'>
-            <svg width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><g fill="#fff"><path d="M4.5 1L2 3.5v9h3V15l2.5-2.5h2L14 8V1H4.5zM13 7.5l-2 2H9l-1.75 1.75V9.5H5V2h8v5.5z" /><path d="M11.5 3.75h-1v3h1v-3zM8.75 3.75h-1v3h1v-3z" /></g>
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><g fill="#fff"><path d="M4.5 1L2 3.5v9h3V15l2.5-2.5h2L14 8V1H4.5zM13 7.5l-2 2H9l-1.75 1.75V9.5H5V2h8v5.5z" /><path d="M11.5 3.75h-1v3h1v-3zM8.75 3.75h-1v3h1v-3z" /></g>
             </svg>
           </div>
         </div>
