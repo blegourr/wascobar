@@ -11,7 +11,7 @@ import NotFound from './page/NotFound';
 import MentionsLegals from './page/MentionsLegals';
 import EasterEgg from './page/EasterEgg';
 import Soutiens from './page/Soutiens';
-import Contact from './page/Contact';
+// import Contact from './page/Contact';
 import { useEffect, useState } from 'react';
 
 function App() {
