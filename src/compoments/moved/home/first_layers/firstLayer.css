@@ -1,0 +1,53 @@
+.first_layer_Home {
+  width: 100%;
+  height: 45vw;
+  position: relative;
+}
+
+.first_layer_Home .background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.first_layer_Home .background div {
+  background: #000000d6;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.first_layer_Home .background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.first_layer_Home .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.first_layer_Home .content .contentText {
+  text-align: center;
+}
+
+.first_layer_Home .content .contentImg {
+  width: 15vw;
+  height: 15vw;
+  margin-right: 2.5rem;
+}
+
+.first_layer_Home .content .contentImg img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
