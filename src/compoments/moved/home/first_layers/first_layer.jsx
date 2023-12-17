@@ -12,13 +12,10 @@ function First_layer_Home() {
 
   const videoRef = useRef(null);
 
-  
-
   useEffect(() => {
     const videoElement = videoRef.current;
 
     const handleCanPlayThrough = () => {
-      // La vidéo est prête à être lue, définir autoplay sur true
       videoElement.autoplay = true;
       videoElement.removeEventListener('canplaythrough', handleCanPlayThrough);
     };
@@ -26,21 +23,34 @@ function First_layer_Home() {
     videoElement.addEventListener('canplaythrough', handleCanPlayThrough);
 
     // Vérifier si la vidéo est prête à jouer
-    const canPlayPromise = videoElement.play();
+    const playPromise = videoElement.play();
 
-    if (canPlayPromise !== undefined) {
-      canPlayPromise
-        .then(() => {
-          videoElement.autoplay = true;
-        })
-        // .catch((error) => {
-        //   // La lecture automatique n'est pas possible, l'utilisateur doit lancer la vidéo manuellement
-        //   // console.error('La lecture automatique n\'est pas possible. Veuillez lancer la vidéo manuellement.', error);
-        // });
+    if (playPromise !== undefined) {
+      playPromise.then(() => {
+        // La vidéo a pu être lue automatiquement
+        videoElement.autoplay = true;
+      }).catch(error => {
+        // La lecture automatique n'est pas possible, l'utilisateur doit lancer la vidéo manuellement
+        console.error('La lecture automatique n\'est pas possible. Veuillez lancer la vidéo manuellement.', error);
+      });
     }
+
+    // Ajouter un gestionnaire d'événements pour détecter l'interaction de l'utilisateur
+    const handleInteraction = () => {
+      document.removeEventListener('mousedown', handleInteraction);
+      document.removeEventListener('touchstart', handleInteraction);
+
+      // Redémarrer la vidéo après l'interaction de l'utilisateur
+      videoElement.play();
+    };
+
+    document.addEventListener('mousedown', handleInteraction);
+    document.addEventListener('touchstart', handleInteraction);
 
     return () => {
       videoElement.removeEventListener('canplaythrough', handleCanPlayThrough);
+      document.removeEventListener('mousedown', handleInteraction);
+      document.removeEventListener('touchstart', handleInteraction);
     };
   }, []);
 
