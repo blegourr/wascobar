@@ -81,13 +81,13 @@ function App() {
             <Soutiens data={data} setData={setData} />
           }
         />
-        <Route
+        {/* <Route
           path='/Contact'
           exact
           element={
             <Contact data={data} setData={setData} />
           }
-        />
+        /> */}
         <Route
           path='/Mentions_legal'
           exact
