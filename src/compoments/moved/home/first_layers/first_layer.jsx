@@ -25,20 +25,6 @@ function First_layer_Home() {
 
     videoElement.addEventListener('canplaythrough', handleCanPlayThrough);
 
-    // Vérifier si la vidéo est prête à jouer
-    const canPlayPromise = videoElement.play();
-
-    if (canPlayPromise !== undefined) {
-      canPlayPromise
-        .then(() => {
-          // La vidéo peut être lue automatiquement
-        })
-        .catch((error) => {
-          // La lecture automatique n'est pas possible, l'utilisateur doit lancer la vidéo manuellement
-          console.error('La lecture automatique n\'est pas possible. Veuillez lancer la vidéo manuellement.', error);
-        });
-    }
-
     return () => {
       videoElement.removeEventListener('canplaythrough', handleCanPlayThrough);
     };
