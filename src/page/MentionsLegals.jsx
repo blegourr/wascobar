@@ -5,10 +5,10 @@ import HeaderCompongnement from '../compoments/fixed/header/header';
 // import ThirdLayer from '../compoments/moved/home/third_layer/third_layer';
 import FooterCompongnement from '../compoments/fixed/footer/Footer';
 
-function MentionsLegals({data}) {
+function MentionsLegals({data, setData}) {
   return (
     <div className='MentionsLegals'>
-        <HeaderCompongnement data={data}/>
+        <HeaderCompongnement data={data} setData={setData}/>
         {/* header */}
         {/* <SecondLayer /> */}
         {/* Third */}
@@ -23,6 +23,7 @@ function MentionsLegals({data}) {
 
 MentionsLegals.propTypes = {
   data: PropTypes.object.isRequired,
+  setData : PropTypes.func.isRequired,
 }
 
 export default MentionsLegals;

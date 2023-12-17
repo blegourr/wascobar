@@ -69,3 +69,17 @@
 .first_layer_easterEgg .containerCards .card:hover .content-card .background.notFound {
   opacity: 0;
 }
+
+
+.first_layer_easterEgg .containerCards .card .content-card .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+}
+
+.first_layer_easterEgg .containerCards .card .content-card .content p {
+  margin-top: 1rem;
+}

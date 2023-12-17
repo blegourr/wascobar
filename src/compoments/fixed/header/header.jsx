@@ -47,10 +47,17 @@ function HeaderCompongnement({ data, setData }) {
     };
   }, []);
 
-  // useEffect(() => {
-  //   data.easterEgg.HeaderCompongnement = true
-  //   setData(data)
-  // }, [logoClickCount, setData, data])
+  useEffect(() => {
+    if (!data.easterEgg.HeaderCompongnement.found && logoClickCount >= 10) {
+      setData(prevData => {
+        const newData = { ...prevData };
+        newData.easterEgg.HeaderCompongnement.found = true;
+        return newData;
+      });
+
+    }
+  }, [logoClickCount, setData, data.easterEgg.HeaderCompongnement]);
+
 
 
   return (

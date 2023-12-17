@@ -38,7 +38,7 @@ function FirstLayerEasterEgg({ data }) {
       <h1>Easter Egg</h1>
       <div className="containerCards">
         {data && data.easterEgg ? (
-          data.easterEgg.map((easter, index) => (
+          Object.values(data.easterEgg).map((easter, index) => (
             <div className="card" key={index}>
               <div className={`content-card ${!easter.found && 'notFound'}`}>
                 <div className="content">

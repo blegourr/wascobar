@@ -11,28 +11,36 @@ import NotFound from './page/NotFound';
 import MentionsLegals from './page/MentionsLegals';
 import EasterEgg from './page/EasterEgg';
 import Soutiens from './page/Soutiens';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
-  const [data, setData] = useState({
-    easterEgg: [
-      {
-        name: 'test',
-        description: 'testestestestest',
+  const storedData = localStorage.getItem('easterEggData');
+  const initialData = storedData ? JSON.parse(storedData) : {
+    easterEgg: {
+      HeaderCompongnement: {
+        name: 'BuBul',
+        description: 'Vous avez trouvé les bulles, mais avez-vous trouvé Bubul ?',
         found: false,
       },
-      {
-        name: 'test',
-        description: 'testestestestest',
+      ohhhhhhhhNonnnnnn: {
+        name: 'Oh Non',
+        description: 'Ohhhhhhhh Nonnnnnn tu as trouver mon secrets',
         found: false,
       },
-      {
-        name: 'test',
-        description: 'testestestestest',
+      paypal: {
+        name: 'paypal',
+        description: 'Il semblerais que tu sais sur qu\'elle page se cache notre paypal mais pourras tu le trouver ?',
         found: false,
       },
-    ]
-  })
+    }
+  };
+
+  const [data, setData] = useState(initialData);
+
+  useEffect(() => {
+    localStorage.setItem('easterEggData', JSON.stringify(data));
+  }, [data])
+
 
   return (
     <BrowserRouter>

@@ -4,10 +4,10 @@ import HeaderCompongnement from '../../compoments/fixed/header/header'
 import FirstLayer from '../../compoments/moved/project/anglais/first_layer/first_layer'
 import SecondLayer from '../../compoments/moved/project/anglais/second_layer/second_layer';
 import FooterCompongnement from '../../compoments/fixed/footer/Footer'
-function PageAnglais({data}) {
+function PageAnglais({data, setData}) {
   return (
     <div className='PageAnglais'>
-      <HeaderCompongnement data={data}/>
+      <HeaderCompongnement data={data} setData={setData}/>
       <FirstLayer />
       <SecondLayer />
       <FooterCompongnement />
@@ -17,6 +17,7 @@ function PageAnglais({data}) {
 
 PageAnglais.propTypes = {
   data: PropTypes.object.isRequired,
+  setData : PropTypes.func.isRequired,
 }
 
 export default PageAnglais;

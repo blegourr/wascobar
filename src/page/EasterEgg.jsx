@@ -6,10 +6,10 @@ import FirstLayerEasterEgg from '../compoments/moved/EasterEgg/first_layer/First
 // import ThirdLayer from '../compoments/moved/home/third_layer/third_layer';
 import FooterCompongnement from '../compoments/fixed/footer/Footer';
 
-function EasterEgg({data}) {
+function EasterEgg({data, setData}) {
   return (
     <div className='EasterEgg'>
-        <HeaderCompongnement data={data}/>
+        <HeaderCompongnement data={data} setData={setData}/>
         <FirstLayerEasterEgg data={data}/>
         <FooterCompongnement />
     </div>
@@ -18,6 +18,7 @@ function EasterEgg({data}) {
 
 EasterEgg.propTypes = {
   data: PropTypes.object.isRequired,
+  setData: PropTypes.func.isRequired,
 }
 
 export default EasterEgg;
