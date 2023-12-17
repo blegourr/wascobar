@@ -68,7 +68,7 @@ function First_layer_Home() {
       <div className="background">
         {/* <img src="" alt="" /> */}
         <div className="cache"></div>
-        <video src={video} autoPlay loop ref={videoRef}></video>
+        <video src={video} autoPlay loop ref={videoRef} muted></video>
       </div>
     </div>
   );
