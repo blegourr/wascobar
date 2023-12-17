@@ -6,10 +6,10 @@ import HeaderCompongnement from '../compoments/fixed/header/header';
 import FooterCompongnement from '../compoments/fixed/footer/Footer';
 import First_layer_Mentions from '../compoments/moved/Mention/First_layers/First_layers';
 
-function MentionsLegals({data, setData}) {
+function MentionsLegals({data, setData, setFoundName}) {
   return (
     <div className='MentionsLegals'>
-        <HeaderCompongnement data={data} setData={setData}/>
+        <HeaderCompongnement data={data} setData={setData} setFoundName={setFoundName}/>
         <First_layer_Mentions />
         <FooterCompongnement />
     </div>
@@ -19,6 +19,7 @@ function MentionsLegals({data, setData}) {
 MentionsLegals.propTypes = {
   data: PropTypes.object.isRequired,
   setData : PropTypes.func.isRequired,
+  setFoundName : PropTypes.func.isRequired,
 }
 
 export default MentionsLegals;
