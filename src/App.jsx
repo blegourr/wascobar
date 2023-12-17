@@ -17,10 +17,10 @@ import EasterEggPopup from './compoments/fixed/popup/EasterEgg/EasterEggPopup';
 function App() {
   const storedData = localStorage.getItem('easterEggData');
   const storedDataVersions = localStorage.getItem('DataVersions');
-  const version = "0";
   let versionInegual = false
-
+  
   const [foundName, setFoundName] = useState('');
+  const version = "0";
   const updatedData = {
     easterEgg: {
       buBul: {
@@ -29,7 +29,7 @@ function App() {
         found: false,
       },
       ohhhhhhhhNonnnnnn: {
-        name: 'Oh Nonn',
+        name: 'OhhhhNonnnnn',
         description: 'Ohhhhhhhh Nonnnnnn tu as trouvé mon secret',
         found: false,
       },
