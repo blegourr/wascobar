@@ -45,7 +45,7 @@ function HomeSecondLayers() {
           <div className="content-card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
             <h1>Dualité</h1>
             <img src={Romance} alt="" />
-            <p>Blablab labbalbalbalb albala baal blablabl balb albabla</p>
+            <p>Dualitée est le projet de court métrage expérimental d'Oscar</p>
             <div className="bg-animate"></div>
           </div>
         </div>
@@ -53,7 +53,7 @@ function HomeSecondLayers() {
           <div className="content-card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
             <h1>Anglais</h1>
             <img src={Anglais} alt="" />
-            <p>blab lablablabl albal blalbalabblab lab labla</p>
+            <p>L'anglais pour l'instant c'est le court métrage d'action de Baptiste</p>
             <div className="bg-animate"></div>
           </div>
         </div>
@@ -61,7 +61,7 @@ function HomeSecondLayers() {
           <div className="content-card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
             <h1>Romance</h1>
             <img src={Romance} alt="" />
-            <p>Blab lablablab labalabla balbala bla</p>
+            <p>C'est un projet de court métrage Romantique/Humouristique, par Wyatt</p>
             <div className="bg-animate"></div>
           </div>
         </div>

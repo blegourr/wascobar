@@ -1,0 +1,66 @@
+.second_layer_projet_Film {
+  width: 100%;
+  background-color: #020010;
+
+}
+
+.second_layer_projet_Film .info {
+  /* height: 35vw; */
+  background-color: #020010;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7.5rem 0;
+}
+
+.second_layer_projet_Film .info.reverse {
+  flex-direction: row-reverse;
+}
+
+.second_layer_projet_Film .info img {
+  border-radius: 20px;
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  margin: 0 100px;
+
+}
+
+.second_layer_projet_Film .info p {
+  max-width: 500px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .second_layer_projet_Film .info {
+    flex-direction: column;
+  }
+
+  .second_layer_projet_Film .info.reverse {
+    flex-direction: column;
+  }
+
+  .second_layer_projet_Film .info img {
+    margin: 2.5rem 0;
+
+  }
+
+  .second_layer_projet_Film .info p {
+    max-width: unset;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+
+  .second_layer_projet_Film .info img {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .second_layer_projet_Film .info p {
+    max-width: unset;
+    width: 80%;
+  }
+}
