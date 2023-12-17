@@ -14,7 +14,7 @@ function first_layer_project_anglais() {
         </div>
         <div className="desc">
           <img src={baba} alt="" />
-          <p>blablablablablabla blalablablablablablablablab lablablablzab lazblablablablablablabla blablablablablabl alablabla blablablablablab lablablablzablazblablab  lablablablzab lazblablablablablablabla blablablablablabl lablablablzab lazblablablablablablabla blablablablablabl lazblablablablablablabla blablablablablabl lazblablablablablablabla blablablablablabl</p>
+          <p>Voici le projet de court métrage 0 budgets le plus ambitieux des trois ! En effet on parle la d'un court métrage sur la seconde guerre mondiale localisé en France durant l'occupation Allemande</p>
         </div>
       </div>
     </div>

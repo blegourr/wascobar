@@ -1,6 +1,7 @@
 import './third_layer.css'
 import Anglais from './assets/Anglais.jpg'
 import MayoCherie from './assets/mayoCherie.jpg'
+import Watt from './assets/watt.jpg'
 
 function home_third_layer() {
   return (
@@ -8,7 +9,7 @@ function home_third_layer() {
       <h1>Notre équipe</h1>
       <div className="groups revers">
         <p>Wyatt est le moteur de ce projet, actuellement étudiant en audiovisuel, il a choisit de s'éxercer dans le dur pour faire ce qu'il aime avec ses potes.</p>
-        <img src={Anglais} alt="" />
+        <img src={Watt} alt="" />
       </div>
       <div className="groups">
         <p>Baptiste c'est le deuxième moteur du projet. C'est celui qui a écrit en entier son film d'action de A à Z avec l'aide de Wyatt, et aussi le créateur de ce site internet </p>
