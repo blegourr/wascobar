@@ -29,9 +29,9 @@ function First_layer_Home() {
       playPromise.then(() => {
         // La vidéo a pu être lue automatiquement
         videoElement.autoplay = true;
-      }).catch(error => {
+      }).catch(() => {
         // La lecture automatique n'est pas possible, l'utilisateur doit lancer la vidéo manuellement
-        console.error('La lecture automatique n\'est pas possible. Veuillez lancer la vidéo manuellement.', error);
+        // console.error('La lecture automatique n\'est pas possible. Veuillez lancer la vidéo manuellement.', error);
       });
     }
 
