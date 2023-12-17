@@ -8,11 +8,11 @@ function second_layer() {
     <div className='second_layer_projet_Film'>
       <div className="info">
         <img src={baba2} alt="" />
-        <p>Dans ce court métrage, on suit l&apos;histoire d&apos;un personnage lambda, et sa chute sans fin vers une folie qui prendra le dessus de son esprit, en mettant l&apos;accent sur la personnification de cette folie,</p>
+        <p>On suivra durant l'histoire un groupe de résistants français étouffé de l'occupation Allemande, mais durant cette période bien noire de l'histoire, ils feront la rencontre d'un étrange personnage...</p>
       </div>
       <div className="info reverse">
         <img src={baba2} alt="" />
-        <p>Dans ce court métrage, on suit l&apos;histoire d&apos;un personnage lambda, et sa chute sans fin vers une folie qui prendra le dessus de son esprit, en mettant l&apos;accent sur la personnification de cette folie,</p>
+        <p>Ce personnage changera leur cours de leur vie, ils seront amené a frôler la mort, risquer leur peau pour cette personne si mystérieuse !</p>
       </div>
     </div>
   );
