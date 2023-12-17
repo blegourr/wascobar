@@ -1,0 +1,21 @@
+.First_layer_contact h1{
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 18vw;
+}
+
+.First_layer_contact .groups.first p{
+    display: flex;
+    text-align: center;
+
+}
+
+.First_layer_contact .groups.first{
+   margin: 10vw 0 0 15vw;
+   display: flex;
+   align-items: column;
+}
+
+.First_layer_contact .groups.first .img{
+  width: 2vw;
+}

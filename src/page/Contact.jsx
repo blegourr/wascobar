@@ -4,12 +4,12 @@ import First_layer_contact from '../compoments/moved/Contact/First_layer_contact
 // import ThirdLayer from '../compoments/moved/home/third_layer/third_layer';
 import FooterCompongnement from '../compoments/fixed/footer/Footer';
 
-function Contact() {
+function Contact({data, setData}) {
   return (
     <div className='Contact'>
-        <HeaderCompongnement/>
-        <First_layer_contact />
-        <FooterCompongnement />
+        <HeaderCompongnement data={data} setData={setData}/>
+        <First_layer_contact data={data} setData={setData}/>
+        <FooterCompongnement/>
     </div>
   );
 }
