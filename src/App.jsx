@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter, useLocation } from 'react-router-dom';
 
 // import css
 import './App.css';
@@ -8,7 +8,6 @@ import Home from './page/Home'
 import Anglais from './page/Project/Anglais'
 import Dualite from './page/Project/Dualite'
 import NotFound from './page/NotFound';
-import MentionsLegals from './page/MentionsLegals';
 import EasterEgg from './page/EasterEgg';
 import Soutiens from './page/Soutiens';
 // import Contact from './page/Contact';
@@ -19,9 +18,9 @@ function App() {
   const storedData = localStorage.getItem('easterEggData');
   const storedDataVersions = localStorage.getItem('DataVersions');
   let versionInegual = false
-  
+
   const [foundName, setFoundName] = useState('');
-  const version = "0";
+  const version = "0.1.1";
   const updatedData = {
     easterEgg: {
       buBul: {
@@ -39,6 +38,11 @@ function App() {
         description: 'Il semble que tu saches sur quelle page se cache notre Paypal, mais pourras-tu le trouver ?',
         found: false,
       },
+      rickRoll: {
+        name: 'rick roll',
+        description: 'Never Gonna Give You Up. Never Gonna Let You Down, Never gonna run Around, And Desert You :3',
+        found: false,
+      },
     }
   };
 
@@ -53,13 +57,21 @@ function App() {
   useEffect(() => {
     localStorage.setItem('easterEggData', JSON.stringify(data));
   }, [data]);
-  
+
   // if (!data) {
   //   return null; // or you can render a loading state or a default message
   // }
 
+  const ScrollToTop = () => {
+    const location = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
+  }
+
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <EasterEggPopup foundName={foundName} data={data} />
       <Routes>
         <Route
@@ -95,20 +107,6 @@ function App() {
           exact
           element={
             <Soutiens data={data} setData={setData} setFoundName={setFoundName} />
-          }
-        />
-        {/* <Route
-          path='/Contact'
-          exact
-          element={
-            <Contact data={data} setData={setData} />
-          }
-        /> */}
-        <Route
-          path='/Mentions_legal'
-          exact
-          element={
-            <MentionsLegals data={data} setData={setData} setFoundName={setFoundName} />
           }
         />
         <Route path="*" element={<NotFound />} />
