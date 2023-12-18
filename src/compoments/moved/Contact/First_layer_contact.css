@@ -4,18 +4,24 @@
     margin-top: 18vw;
 }
 
-.First_layer_contact .groups.first p{
-    display: flex;
-    text-align: center;
-
-}
-
-.First_layer_contact .groups.first{
-   margin: 10vw 0 0 15vw;
+.First_layer_contact .groups{
+   margin: 15vw 0 15vw 0;
    display: flex;
-   align-items: column;
+   align-items: center;
+   flex-direction: column;
 }
 
-.First_layer_contact .groups.first .img{
-  width: 2vw;
+.First_layer_contact .groups img,
+.First_layer_contact .groups svg {
+  width: 5vw;
+  display: flex;
+  
+}
+
+
+
+.First_layer_contact .groups.second{
+   margin: 0 0 0 0;
+   display: flex;
+   align-items: flex-start;
 }
