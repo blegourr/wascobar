@@ -43,7 +43,7 @@ function FooterCompongnement() {
         </div>
         <div className="containerlink">
           <div className="button">
-            <button onClick={() => nav("/Mentions_legal")}>Mentions legale</button>
+            <button onClick={() => nav("/Easter_egg")}>Easter egg</button>
             <div className="belowButton"></div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
 
 // import css
 import './firstLayer.css'
@@ -8,7 +9,7 @@ import video from './assets/V1.mp4'
 import logo from '../../../fixed/header/assets/logo.webp'
 
 
-function First_layer_Home() {
+function First_layer_Home({ data, setData, setFoundName }) {
 
   const videoRef = useRef(null);
 
@@ -54,11 +55,25 @@ function First_layer_Home() {
     };
   }, []);
 
+  const handleClickImg = () => {
+    // ouvrir une nouvelle page avec le rick roll
+
+    if (!data.easterEgg.rickRoll.found) {
+      setData(prevData => {
+        const newData = { ...prevData };
+        newData.easterEgg.rickRoll.found = true;
+        return newData;
+      });
+
+      setFoundName('rickRoll')
+    }
+  }
+
   return (
     <div className='first_layer_Home'>
       <div className="content">
         <div className="contentImg">
-          <img src={logo} alt="" />
+          <img src={logo} alt="" onClick={handleClickImg} />
         </div>
         <div className="contentText">
           <h1>Wascobar</h1>
@@ -74,5 +89,10 @@ function First_layer_Home() {
   );
 }
 
+First_layer_Home.propTypes = {
+  data: PropTypes.object.isRequired,
+  setData: PropTypes.func.isRequired,
+  setFoundName: PropTypes.func.isRequired,
+}
 
 export default First_layer_Home;
