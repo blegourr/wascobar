@@ -5,11 +5,11 @@ function second_layer() {
     <div className='second_layer_projet_Film'>
       <div className="info">
         <img src={watt2} alt="" />
-        <p>Dans ce court métrage, on suit l&apos;histoire d&apos;un personnage lambda, et sa chute sans fin vers une folie qui prendra le dessus de son esprit, en mettant l&apos;accent sur la personnification de cette folie,</p>
+        <p>C'est un projet pour l'instant en état d'embryon. On compte faire une romance humouristique .</p>
       </div>
       <div className="info reverse">
         <img src={watt2} alt="" />
-        <p>Dans ce court métrage, on suit l&apos;histoire d&apos;un personnage lambda, et sa chute sans fin vers une folie qui prendra le dessus de son esprit, en mettant l&apos;accent sur la personnification de cette folie,</p>
+        <p>Vous l'aurez remarqué avec ces textes trés court, on ne sait encore que peu de chose sur ce qu'on va pouvoir faire avec ce film</p>
       </div>
     </div>
   );
