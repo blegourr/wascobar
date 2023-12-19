@@ -2,6 +2,7 @@ import './third_layer.css'
 import Anglais from '../second_layer/assets/Anglais.webp'
 import MayoCherie from './assets/mayoCherie.webp'
 import Watt from './assets/watt.jpg'
+import Oscar from './assets/oscar.jpg'
 
 function home_third_layer() {
   return (
@@ -17,7 +18,7 @@ function home_third_layer() {
       </div>
       <div className="groups revers">
         <p>Oscar c&apos;est le compositeur de musique sur tout les projets, il est aussi gros fan de métal et adore créer de la musique. C&apos;est ausi le créateur du projet Dualitée !</p>
-        <img src={Anglais} alt="" />
+        <img src={Oscar} alt="" />
       </div>
       <div className="groups">
         <p>Maxence aussi appelé plus communément Mayo, c&apos;est celui qui prendra en image tout nos cours métrage et faire briller l&apos;image comme il sait bien le faire.</p>
