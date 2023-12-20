@@ -2,7 +2,7 @@ import wyatt from './assets/aaah.png'
 
 function first_layer_project_romance() {
   return (
-    <div className='first_layer_project_romance'>
+    <div className='first_layer_project_Film'>
       <div className='container'>
         <div className="titre">
           <h1>Proposé par Wyatt</h1>
