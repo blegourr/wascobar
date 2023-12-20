@@ -11,7 +11,7 @@ function PageHome({data, setData, setFoundName}) {
     <div className='PageHome'>
         {/* header */}
         <HeaderCompongnement data={data} setData={setData} setFoundName={setFoundName}/>
-        <FirstLayer />
+        <FirstLayer data={data} setData={setData} setFoundName={setFoundName}/>
         <SecondLayer />
         <ThirdLayer />
         {/* footer */}
