@@ -11,6 +11,8 @@ import NotFound from './page/NotFound';
 import EasterEgg from './page/EasterEgg';
 import Soutiens from './page/Soutiens';
 import Romance from './page/Project/Romance'
+import Contact from './page/Contact'
+
 // import Contact from './page/Contact';
 import { useEffect, useState } from 'react';
 import EasterEggPopup from './compoments/fixed/popup/EasterEgg/EasterEggPopup';
@@ -115,6 +117,13 @@ function App() {
           exact
           element={
             <Soutiens data={data} setData={setData} setFoundName={setFoundName} />
+          }
+        />
+        <Route
+          path='/Contact'
+          exact
+          element={
+            <Contact data={data} setData={setData} setFoundName={setFoundName} />
           }
         />
         <Route path="*" element={<NotFound />} />
