@@ -13,7 +13,7 @@ function PageHome({data, setData, setFoundName}) {
         <HeaderCompongnement data={data} setData={setData} setFoundName={setFoundName}/>
         <FirstLayer data={data} setData={setData} setFoundName={setFoundName}/>
         <SecondLayer />
-        <ThirdLayer />
+        <ThirdLayer data={data} setData={setData} setFoundName={setFoundName}/>
         {/* footer */}
         <FooterCompongnement />
     </div>

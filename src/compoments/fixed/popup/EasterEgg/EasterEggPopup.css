@@ -1,5 +1,5 @@
 .EasterEggPopup {
-  position: absolute;
+  position: fixed;
   top: 8.5vw;
   left: -1rem;
   height: 5.5rem;
@@ -8,6 +8,7 @@
   text-align: center;
   transform: translate(-100%);
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 200;
 }
 
 .EasterEggPopup.active {

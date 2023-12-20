@@ -1,14 +1,58 @@
-import './third_layer.css'
-import Anglais from '../second_layer/assets/Anglais.webp'
-import MayoCherie from './assets/mayoCherie.webp'
-import Watt from './assets/watt.jpg'
-import Oscar from './assets/oscar.jpg'
+import { useEffect, useRef, useState } from 'react';
+import PropTypes from 'prop-types';
 
-function home_third_layer() {
+import './third_layer.css'
+
+import Anglais from '../second_layer/assets/Anglais.webp';
+import MayoCherie from './assets/mayoCherie.webp';
+import Watt from './assets/watt.jpg';
+import Oscar from './assets/oscar.jpg';
+import Clip from './assets/clip.mp3'
+
+function Home_third_layer({ data, setData, setFoundName }) {
+  const [logoClickCount, setLogoClickCount] = useState(0);
+  const logoRef = useRef(null);
+
+  const handleLogoClick = () => {
+    setLogoClickCount((prevCount) => prevCount + 1);
+  };
+
+  const handleOutsideClick = (event) => {
+    if (logoRef.current && !logoRef.current.contains(event.target)) {
+      // Click occurred outside the logo, reset the click count
+      setLogoClickCount(0);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!data.easterEgg.clip.found && logoClickCount >= 10) {
+      setData(prevData => {
+        const newData = { ...prevData };
+        newData.easterEgg.clip.found = true;
+        return newData;
+      });
+      setFoundName('clip')
+    }
+
+    if (logoClickCount >= 10) {
+      setLogoClickCount(0);
+      let audio = new Audio(Clip);
+      audio.play();
+    }
+  }, [logoClickCount, setData, setFoundName, data.easterEgg.clip]);
+
   return (
     <div className='home_third_layer'>
       <h1>Notre équipe</h1>
-      <div className="groups revers">
+      <div className="groups revers" onClick={handleLogoClick}>
         <p>Wyatt est le moteur de ce projet, actuellement étudiant en audiovisuel, il a choisit de s&apos;éxercer dans le dur pour faire ce qu&apos;il aime avec ses potes.</p>
         <img src={Watt} alt="" />
       </div>
@@ -29,5 +73,10 @@ function home_third_layer() {
   );
 }
 
+Home_third_layer.propTypes = {
+  data: PropTypes.object.isRequired,
+  setData: PropTypes.func.isRequired,
+  setFoundName: PropTypes.func.isRequired,
+}
 
-export default home_third_layer;
+export default Home_third_layer;
