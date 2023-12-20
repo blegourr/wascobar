@@ -1,4 +1,4 @@
-import wyatt from './assets/aaah.png'
+import wyatt from './assets/watt.jpg'
 
 function first_layer_project_romance() {
   return (
