@@ -1,18 +1,15 @@
-import './second_layer.css'
-
-import baba2 from './assets/baptiste2.jpg'
-
+import watt2 from './Assets/watt2.jpeg'
 
 function second_layer() {
   return (
     <div className='second_layer_projet_Film'>
       <div className="info">
-        <img src={baba2} alt="" />
-        <p>Dans ce court métrage, on suit l&apos;histoire d&apos;un personnage lambda, et sa chute sans fin vers une folie qui prendra le dessus de son esprit, en mettant l&apos;accent sur la personnification de cette folie,</p>
+        <img src={watt2} alt="" />
+        <p>C'est un projet pour l'instant en état d'embryon. On compte faire une romance humouristique .</p>
       </div>
       <div className="info reverse">
-        <img src={baba2} alt="" />
-        <p>Dans ce court métrage, on suit l&apos;histoire d&apos;un personnage lambda, et sa chute sans fin vers une folie qui prendra le dessus de son esprit, en mettant l&apos;accent sur la personnification de cette folie,</p>
+        <img src={watt2} alt="" />
+        <p>Vous l'aurez remarqué avec ces textes trés court, on ne sait encore que peu de chose sur ce qu'on va pouvoir faire avec ce film</p>
       </div>
     </div>
   );
