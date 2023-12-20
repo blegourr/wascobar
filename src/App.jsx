@@ -74,7 +74,7 @@ function App() {
   const ScrollToTop = () => {
     const location = useLocation();
     useEffect(() => {
-      if (location.pathname === url) {
+      if (location.pathname !== url) {
         setUrl(location.pathname)
         window.scrollTo(0, 0);
       }
