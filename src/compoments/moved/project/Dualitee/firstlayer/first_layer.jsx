@@ -1,5 +1,5 @@
 // import img
-import oscar from './assets/newpp.png'
+import oscar from './assets/oscar.jpg'
 
 function first_layer_project_dualitee() {
   return (

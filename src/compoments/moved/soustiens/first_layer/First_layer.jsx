@@ -2,12 +2,12 @@ import PropTypes from 'prop-types';
 
 import './First_layer.css';
 
-import wascobar from '../../../fixed/header/assets/logo.jpg'
+import wascobar from '../../../fixed/header/assets/logo.webp'
 
 import audioOhhhhNonnn from './assets/ohhhhhhhhNonnnnnn.mp3'
 import paypal from './assets/paypal.mp3'
 
-function first_layer_page_soutiens({data, setData}) {
+function first_layer_page_soutiens({data, setData, setFoundName}) {
   const handleContextWawcobar = (event) => {
     event.preventDefault();
     let audio = new Audio(audioOhhhhNonnn);
@@ -25,6 +25,7 @@ function first_layer_page_soutiens({data, setData}) {
         newData.easterEgg.ohhhhhhhhNonnnnnn.found = true;
         return newData;
       });
+      setFoundName('ohhhhhhhhNonnnnnn')
     }
   }
 
@@ -47,6 +48,7 @@ function first_layer_page_soutiens({data, setData}) {
         newData.easterEgg.paypal.found = true;
         return newData;
       });
+      setFoundName('paypal')
     }
   };
 
@@ -72,6 +74,7 @@ function first_layer_page_soutiens({data, setData}) {
 first_layer_page_soutiens.propTypes = {
   data: PropTypes.object.isRequired,
   setData : PropTypes.func.isRequired,
+  setFoundName : PropTypes.func.isRequired,
 }
 
 export default first_layer_page_soutiens;

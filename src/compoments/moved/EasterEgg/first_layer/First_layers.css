@@ -30,7 +30,7 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background: linear-gradient(155deg, #13075E 0%, rgba(10, 3, 53, 0.20) 100%, rgba(10, 3, 53, 0.37) 100%);
+  background: linear-gradient(155deg, #05481ca0 0%, #05481c2f 100%, #05481c1d 100%);
   border-radius: 1rem;
   text-align: center;
   padding: 1rem;
@@ -52,7 +52,7 @@
   position: absolute;
   width: 550px;
   height: 550px;
-  background: #474cb3;
+  background: #3ba05fa0;
   filter: blur(180px);
   border-radius: 300px;
   opacity: 0;

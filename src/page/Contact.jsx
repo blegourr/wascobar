@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import HeaderCompongnement from '../compoments/fixed/header/header';
 import First_layer_contact from '../compoments/moved/Contact/First_layer_contact';
 // import SecondLayer from '../compoments/moved/home/second_layer/second_layer';
@@ -14,5 +16,9 @@ function Contact({data, setData}) {
   );
 }
 
+Contact.propTypes = {
+  data: PropTypes.object.isRequired,
+  setData : PropTypes.func.isRequired,
+}
 
 export default Contact;
