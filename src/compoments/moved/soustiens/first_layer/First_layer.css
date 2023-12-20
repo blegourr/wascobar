@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: default;
 }
 
 .first_layer_page_soutiens .container {
