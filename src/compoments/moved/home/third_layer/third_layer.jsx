@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './third_layer.css'
 
-import Anglais from '../second_layer/assets/Anglais.webp';
+import Baptiste from './assets/bap.webp'
 import MayoCherie from './assets/mayoCherie.webp';
 import Watt from './assets/watt.jpg';
 import Oscar from './assets/oscar.jpg';
@@ -58,7 +58,7 @@ function Home_third_layer({ data, setData, setFoundName }) {
       </div>
       <div className="groups">
         <p>Baptiste c&apos;est le deuxième moteur du projet. C&apos;est celui qui a écrit en entier son film d&apos;action de A à Z avec l&apos;aide de Wyatt, et aussi le créateur de ce site internet </p>
-        <img src={Anglais} alt="" />
+        <img src={Baptiste} alt="" />
       </div>
       <div className="groups revers">
         <p>Oscar c&apos;est le compositeur de musique sur tout les projets, il est aussi gros fan de métal et adore créer de la musique. C&apos;est ausi le créateur du projet Dualitée !</p>
