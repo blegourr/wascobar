@@ -34,17 +34,18 @@ function Home_third_layer({ data, setData, setFoundName }) {
 
   useEffect(() => {
     if (!data.easterEgg.clip.found && logoClickCount >= 10) {
-      let audio = new Audio(Clip);
-      audio.play();
-
       setData(prevData => {
         const newData = { ...prevData };
         newData.easterEgg.clip.found = true;
         return newData;
       });
-
       setFoundName('clip')
+    }
 
+    if (logoClickCount >= 10) {
+      setLogoClickCount(0);
+      let audio = new Audio(Clip);
+      audio.play();
     }
   }, [logoClickCount, setData, setFoundName, data.easterEgg.clip]);
 
@@ -74,8 +75,8 @@ function Home_third_layer({ data, setData, setFoundName }) {
 
 Home_third_layer.propTypes = {
   data: PropTypes.object.isRequired,
-  setData : PropTypes.func.isRequired,
-  setFoundName : PropTypes.func.isRequired,
+  setData: PropTypes.func.isRequired,
+  setFoundName: PropTypes.func.isRequired,
 }
 
 export default Home_third_layer;
