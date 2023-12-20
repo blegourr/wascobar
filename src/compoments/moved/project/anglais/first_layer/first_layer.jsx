@@ -3,7 +3,7 @@ import './firstLayer.css'
 
 
 // import img
-import baba from './assets/baptiste.jpg.jpg'
+import baba from './assets/bap.webp'
 
 function first_layer_project_anglais() {
   return (
