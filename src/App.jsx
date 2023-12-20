@@ -46,6 +46,11 @@ function App() {
         description: 'Never Gonna Give You Up. Never Gonna Let You Down, Never gonna run Around, And Desert You :3',
         found: false,
       },
+      clip: {
+        name: 'c\'est clipé',
+        description: 'Never Gonna Give You Up. Never Gonna Let You Down, Never gonna run Around, And Desert You :3',
+        found: false,
+      },
     }
   };
 
