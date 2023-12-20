@@ -10,8 +10,8 @@ function Contact({data, setData}) {
   return (
     <div className='Contact'>
         <HeaderCompongnement data={data} setData={setData}/>
-        <First_layer_contact />
-        <FooterCompongnement />
+        <First_layer_contact data={data} setData={setData}/>
+        <FooterCompongnement/>
     </div>
   );
 }
