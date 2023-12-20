@@ -23,7 +23,7 @@ function App() {
   let versionInegual = false
 
   const [foundName, setFoundName] = useState('');
-  const version = "0.2.0";
+  const version = "0.2.2";
   const updatedData = {
     easterEgg: {
       buBul: {
@@ -48,7 +48,7 @@ function App() {
       },
       clip: {
         name: 'c\'est clipé',
-        description: 'Never Gonna Give You Up. Never Gonna Let You Down, Never gonna run Around, And Desert You :3',
+        description: 'Et voila. Ça c\'est clipé, Merci !',
         found: false,
       },
     }
