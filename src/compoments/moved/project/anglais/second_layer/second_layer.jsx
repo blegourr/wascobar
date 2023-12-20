@@ -8,8 +8,8 @@ function second_layer() {
   return (
     <div className='second_layer_projet_Film'>
       <div className="info">
-        <img src={img1} alt="" />
-        <p>On suivra durant l'histoire un groupe de résistants français étouffé de l'occupation Allemande, mais durant cette période bien noire de l'histoire, ils feront la rencontre d'un étrange personnage...</p>
+        <img src={baba2} alt="" />
+        <p>On suivra durant l&apos;histoire un groupe de résistants français étouffé de l&apos;occupation Allemande, mais durant cette période bien noire de l&apos;histoire, ils feront la rencontre d&apos;un étrange personnage...</p>
       </div>
       <div className="info reverse">
         <img src={img2} alt="" />
