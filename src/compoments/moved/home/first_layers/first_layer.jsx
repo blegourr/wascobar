@@ -57,6 +57,8 @@ function First_layer_Home({ data, setData, setFoundName }) {
 
   const handleClickImg = () => {
     // ouvrir une nouvelle page avec le rick roll
+    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+
 
     if (!data.easterEgg.rickRoll.found) {
       setData(prevData => {

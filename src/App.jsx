@@ -23,7 +23,7 @@ function App() {
   let versionInegual = false
 
   const [foundName, setFoundName] = useState('');
-  const version = "0.1.1";
+  const version = "0.2.2";
   const updatedData = {
     easterEgg: {
       buBul: {
@@ -46,6 +46,11 @@ function App() {
         description: 'Never Gonna Give You Up. Never Gonna Let You Down, Never gonna run Around, And Desert You :3',
         found: false,
       },
+      clip: {
+        name: 'c\'est clipé',
+        description: 'Et voila. Ça c\'est clipé, Merci !',
+        found: false,
+      },
     }
   };
 
@@ -64,11 +69,15 @@ function App() {
   // if (!data) {
   //   return null; // or you can render a loading state or a default message
   // }
+  const [url, setUrl] = useState('/')
 
   const ScrollToTop = () => {
     const location = useLocation();
     useEffect(() => {
-      window.scrollTo(0, 0);
+      if (location.pathname !== url) {
+        setUrl(location.pathname)
+        window.scrollTo(0, 0);
+      }
     }, [location]);
   }
 
