@@ -19,7 +19,7 @@
 }
 
 .First_layer_contact .groups img,
-.First_layer_contact .groups svg {
+.First_layer_contact .groups svg{
   width: 10vw;
   margin-top: 5%;
 }
@@ -37,7 +37,11 @@
    margin-inline-start: 30px;
    margin-inline-end: 30px;
    text-align: center;
-   margin: 3vw;
+   margin: 4vw 3vw 3vw 3vw;
+}
+
+.First_layer_contact .groups.second .part.three p{
+   margin: 5vw 3vw 0 2vw;
 }
 
 
@@ -48,10 +52,13 @@
    flex-direction: column;
    margin: 1vw 3vw 0 3vw;
    width: 90%;
-
    background: linear-gradient(155deg, #0c053b 0%, rgba(34, 60, 71, 0.2) 100%, rgba(10, 3, 53, 0.37) 100%);
    border-radius: 6vw;
-   }
+}
+
+.First_layer_contact .groups.second .part{
+   height: 514px;
+}
 
 
 @media screen and (max-width: 1400px) {
@@ -60,11 +67,9 @@
      margin-top: 10vw;
    }
 
-   .First_layer_contact .groups.second .part{
-     width: 70% ;
-   }
 
    .First_layer_contact .groups.second .part.two{
      margin-top: 10%;
+     margin-bottom: 10%;
    }
 }
