@@ -5,7 +5,7 @@ import Twitch from './assets/Twitch.svg'
 function first_layer_contact() {
   return (
     <div className="First_layer_contact">
-      <div classeName="groups first">
+      <div className="groups first">
         <h2>Bienvenue dans cette magnifique page contact où vous pourrez nous contacter à travers ces différentes applications</h2>
         <h1>Contactez nous</h1>
       </div>
