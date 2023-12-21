@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router';
-import Anglais from './assets/Anglais.webp'
+import Anglais from './assets/Anglais.jpeg'
 import Romance from './assets/Romance.webp'
 import './second_layer.css'
 
@@ -45,7 +45,7 @@ function HomeSecondLayers() {
           <div className="content-card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
             <h1>Dualité</h1>
             <img src={Romance} alt="" />
-            <p>Dualitée est le projet de court métrage expérimental d'Oscar</p>
+            <p>Dualitée est le projet de court métrage expérimental d&apos;Oscar</p>
             <div className="bg-animate"></div>
           </div>
         </div>
@@ -53,7 +53,7 @@ function HomeSecondLayers() {
           <div className="content-card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
             <h1>Anglais</h1>
             <img src={Anglais} alt="" />
-            <p>L'anglais pour l'instant c'est le court métrage d'action de Baptiste</p>
+            <p>L&apos;anglais pour l&apos;instant c&apos;est le court métrage d&apos;action de Baptiste</p>
             <div className="bg-animate"></div>
           </div>
         </div>
@@ -61,7 +61,7 @@ function HomeSecondLayers() {
           <div className="content-card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
             <h1>Romance</h1>
             <img src={Romance} alt="" />
-            <p>C'est un projet de court métrage Romantique/Humouristique, par Wyatt</p>
+            <p>C&apos;est un projet de court métrage Romantique/Humouristique, par Wyatt</p>
             <div className="bg-animate"></div>
           </div>
         </div>
