@@ -28,7 +28,9 @@
   width: 100%;
 }
 
-.Second_layer_page_soutiens .containerElement div:nth-child(2) {
+.Second_layer_page_soutiens .containerElement div:nth-child(2),
+.Second_layer_page_soutiens .containerElement div:nth-child(4)
+  {
   flex-direction: row-reverse;
 }
 

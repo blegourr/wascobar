@@ -3,7 +3,7 @@ import './firstLayer.css'
 
 
 // import img
-import baba from './assets/bap.webp'
+import Anglais from './assets/Anglais.jpeg'
 
 function first_layer_project_anglais() {
   return (
@@ -13,7 +13,7 @@ function first_layer_project_anglais() {
           <h1>Proposé par Baptiste</h1>
         </div>
         <div className="desc">
-          <img src={baba} alt="" />
+          <img src={Anglais} alt="" />
           <p>Voici le projet de court métrage 0 budgets le plus ambitieux des trois ! En effet on parle la d&apos;un court métrage sur la seconde guerre mondiale localisé en France durant l&apos;occupation Allemande</p>
         </div>
       </div>
