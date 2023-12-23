@@ -3,7 +3,6 @@ import './second_layer.css'
 import img1 from './assets/img1.jpg'
 import img2 from './assets/img2.jpg'
 
-
 function second_layer() {
   return (
     <div className='second_layer_projet_Film'>
