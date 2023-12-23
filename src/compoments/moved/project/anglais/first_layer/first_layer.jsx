@@ -14,7 +14,7 @@ function first_layer_project_anglais() {
         </div>
         <div className="desc">
           <img src={Anglais} alt="" />
-          <p>Voici le projet de court métrage 0 budgets le plus ambitieux des trois ! En effet on parle la d&apos;un court métrage sur la seconde guerre mondiale localisé en France durant l&apos;occupation Allemande</p>
+          <p>Voici le projet de court métrage 0 budgets le plus ambitieux des trois ! En effet on parle la d&apos;un court métrage sur la seconde guerre mondiale localisé en France durant l&apos;occupation Allemande.</p>
         </div>
       </div>
     </div>
