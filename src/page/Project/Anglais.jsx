@@ -13,7 +13,7 @@ function PageAnglais({ data, setData, setFoundName }) {
       <HeaderCompongnement data={data} setData={setData} setFoundName={setFoundName} />
       <FirstLayer />
       <SecondLayer />
-      {/* <ThirdLayer /> */}
+      <ThirdLayer />
       <FooterCompongnement />
     </div>
   );
