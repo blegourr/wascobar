@@ -1,0 +1,45 @@
+.First_layer_contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 15rem 0 15rem;
+  padding: 0 2.5rem 0;
+}
+
+.First_layer_contact .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.First_layer_contact .img {
+  width: 30%;
+}
+
+.First_layer_contact .img img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.First_layer_contact .title {
+  width: 70%;
+}
+
+.First_layer_contact p {
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .First_layer_contact .img {
+    display: none;
+  }
+
+  .First_layer_contact .title {
+    width: 90%;
+  }
+}

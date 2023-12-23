@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
 
 import HeaderCompongnement from '../compoments/fixed/header/header';
-import First_layer_contact from '../compoments/moved/Contact/First_layer_contact';
-// import SecondLayer from '../compoments/moved/home/second_layer/second_layer';
-// import ThirdLayer from '../compoments/moved/home/third_layer/third_layer';
+import First_layer_contact from '../compoments/moved/Contact/first_layer/First_layer_contact';
+import Second_layer_contact from '../compoments/moved/Contact/second_layer/Second_layer_contact';
 import FooterCompongnement from '../compoments/fixed/footer/Footer';
 
 function Contact({data, setData, setFoundName}) {
@@ -11,6 +10,7 @@ function Contact({data, setData, setFoundName}) {
     <div className='Contact'>
         <HeaderCompongnement data={data} setData={setData} setFoundName={setFoundName}/>
         <First_layer_contact data={data} setData={setData} setFoundName={setFoundName}/>
+        <Second_layer_contact data={data} setData={setData} setFoundName={setFoundName}/>
         <FooterCompongnement/>
     </div>
   );
