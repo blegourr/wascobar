@@ -49,7 +49,7 @@ function HomeSecondLayers() {
             <div className="bg-animate"></div>
           </div>
         </div>
-        <div className="card" onClick={() => nav('/Projets/Anglais')}>
+        <div className="card" onClick={() => nav('/Projets/Londres')}>
           <div className="content-card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
             <h1>Rendez-vous à Londres</h1>
             <img src={Anglais} alt="" />

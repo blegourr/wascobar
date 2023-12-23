@@ -94,7 +94,7 @@ function App() {
           }
         />
         <Route
-          path='/Projets/Anglais'
+          path='/Projets/Londres'
           exact
           element={
             <Anglais data={data} setData={setData} setFoundName={setFoundName} />
