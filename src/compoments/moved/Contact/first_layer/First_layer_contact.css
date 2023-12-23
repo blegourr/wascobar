@@ -33,3 +33,13 @@
   width: 100%;
   font-size: 1.2rem;
 }
+
+@media screen and (max-width: 1000px) {
+  .First_layer_contact .img {
+    display: none;
+  }
+
+  .First_layer_contact .title {
+    width: 90%;
+  }
+}
