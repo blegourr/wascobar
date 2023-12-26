@@ -7,6 +7,9 @@ import ThirdLayer from '../../compoments/moved/project/anglais/third_layer/third
 import FooterCompongnement from '../../compoments/fixed/footer/Footer';
 
 
+import '../background/Anglais/Anglais.css'
+import back from '../background/Anglais/assets/back.jpeg'
+
 function PageAnglais({ data, setData, setFoundName }) {
   return (
     <div className='PageAnglais'>
@@ -15,6 +18,9 @@ function PageAnglais({ data, setData, setFoundName }) {
       <SecondLayer />
       <ThirdLayer />
       <FooterCompongnement />
+      <div className="backgroundFixedPageAnglais">
+        <img src={back} alt="" />
+      </div>
     </div>
   );
 }
