@@ -8,11 +8,11 @@ function second_layer() {
     <div className='second_layer_projet_Film'>
       <div className="info">
         <img src={img1} alt="" />
-        <p>On suivra durant l&apos;histoire un groupe de résistants français étouffé de l&apos;occupation Allemande, mais durant cette période bien noire de l&apos;histoire, ils feront la rencontre d&apos;un étrange personnage...</p>
+        <p>On suivra durant l&apos;histoire un groupe de résistants français étouffé par l&apos;occupation Allemande, mais durant cette période bien noire de l&apos;histoire, ils feront la rencontre d&apos;un étrange personnage...</p>
       </div>
       <div className="info reverse">
         <img src={img2} alt="" />
-        <p>Ce personnage changera leur cours de leur vie, ils seront amené a frôler la mort, risquer leur peau pour cette personne si mystérieuse !</p>
+        <p>Ce personnage changera le cours de leur vie, ils seront amené a frôler la mort, risquer leur peau pour cette personne si mystérieuse !</p>
       </div>
     </div>
   );
