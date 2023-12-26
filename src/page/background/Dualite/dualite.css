@@ -1,0 +1,15 @@
+.PageAnglais .backgroundFixedPageDualite {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -5;
+}
+
+.PageAnglais .backgroundFixedPageDualite img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.05;
+}
