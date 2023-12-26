@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useNavigate } from 'react-router';
 import Anglais from './assets/Anglais.jpeg'
 import Romance from './assets/Romance.webp'
+import Dua from './assets/Dua.jpg'
 import './second_layer.css'
 
 function HomeSecondLayers() {
@@ -44,7 +45,7 @@ function HomeSecondLayers() {
         <div className="card" onClick={() => nav("/Projets/Dualite")}>
           <div className="content-card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
             <h1>Dualité</h1>
-            <img src={Romance} alt="" />
+            <img src={Dua} alt="" />
             <p>Dualitée est le projet de court métrage expérimental d&apos;Oscar</p>
             <div className="bg-animate"></div>
           </div>

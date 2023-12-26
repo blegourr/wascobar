@@ -5,7 +5,7 @@ import './third_layer.css'
 
 import Baptiste from './assets/bap.webp'
 import MayoCherie from './assets/mayoCherie.webp';
-import Watt from './assets/watt.jpg';
+import Watt from './assets/wyatt2.jpg';
 import Oscar from './assets/oscar.jpg';
 import Clip from './assets/clip.mp3'
 
