@@ -5,7 +5,7 @@ import FirstLayer from '../../compoments/moved/project/Dualitee/firstlayer/first
 import SecondLayer from '../../compoments/moved/project/Dualitee/second_layer/second_layer';
 import FooterCompongnement from '../../compoments/fixed/footer/Footer'
 
-import '../background/Dualite/Dualite.css'
+import '../background/Dualite/dualite.css'
 import back from '../background/Dualite/assets/back.jpg'
 
 function PageDualite({ data, setData, setFoundName }) {
