@@ -10,7 +10,7 @@ function second_layer_page_dualitee() {
       </div>
       <div className="info reverse">
         <img src={img2} alt="" />
-         <p>Cette sombre poésie montrera à l&apos;audience une image rationelle, et a une intérpretation de personnalités qu&apos;un individu pourrait développer dans sa tête, tel un enfant s&apos;imaginant un ami imaginaire.</p>
+         <p>Cette sombre poésie montrera à l&apos;audience une image rationelle, et a une interprétation de personnalités qu&apos;un individu pourrait développer dans sa tête, tel un enfant s&apos;imaginant un ami imaginaire.</p>
       </div>
     </div>
   );
