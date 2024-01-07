@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import './firstLayer.css'
 
 // import assets
-import video from './assets/V1.mp4'
+import video from './assets/V1.webm'
 import logo from '../../../fixed/header/assets/logo.webp'
 
 
