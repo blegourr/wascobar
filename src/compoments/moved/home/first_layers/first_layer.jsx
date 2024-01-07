@@ -6,7 +6,7 @@ import './firstLayer.css'
 
 // import assets
 import video from './assets/V1.webm'
-import logo from '../../../fixed/header/assets/logo.webp'
+import logo from '../../../../../public/logo.webp'
 
 
 function First_layer_Home({ data, setData, setFoundName }) {

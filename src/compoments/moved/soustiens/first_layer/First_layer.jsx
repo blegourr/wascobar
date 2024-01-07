@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import './First_layer.css';
 
-import wascobar from '../../../fixed/header/assets/logo.webp'
+import wascobar from '../../../../../public/logo.webp'
 
 import audioOhhhhNonnn from './assets/ohhhhhhhhNonnnnnn.ogg'
 import paypal from './assets/paypal.mp3'
