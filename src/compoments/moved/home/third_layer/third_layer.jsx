@@ -5,8 +5,8 @@ import './third_layer.css'
 
 import Baptiste from './assets/bap.webp'
 import MayoCherie from './assets/mayoCherie.webp';
-import Watt from './assets/wyatt2.jpg';
-import Oscar from './assets/oscar.jpg';
+import Watt from './assets/wyatt2.webp';
+import Oscar from './assets/oscar.webp';
 import Clip from './assets/clip.mp3'
 
 function Home_third_layer({ data, setData, setFoundName }) {

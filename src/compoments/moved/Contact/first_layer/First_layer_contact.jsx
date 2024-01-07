@@ -1,7 +1,7 @@
 import './First_layer_contact.css';
 
 // import img
-import contact from './assets/contact.jpeg'
+import contact from './assets/contact.webp'
 
 function First_layer_contact() {
   return (

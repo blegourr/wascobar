@@ -1,5 +1,5 @@
-import img1 from './Assets/img3.jpg'
-import img2 from './Assets/img4.jpg'
+import img1 from './Assets/img3.webp'
+import img2 from './Assets/img4.webp'
 
 function second_layer() {
   return (

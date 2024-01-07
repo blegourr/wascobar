@@ -1,5 +1,5 @@
-import img1 from './assets/wascobar1.png'
-import img2 from './assets/wascobar2.png'
+import img1 from './assets/wascobar1.webp'
+import img2 from './assets/wascobar2.webp'
 
 function second_layer_page_dualitee() {
   return (

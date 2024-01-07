@@ -8,7 +8,7 @@ import FooterCompongnement from '../../compoments/fixed/footer/Footer';
 
 
 import '../background/Anglais/Anglais.css'
-import back from '../background/Anglais/assets/back.jpeg'
+import back from '../background/Anglais/assets/back.webp'
 
 function PageAnglais({ data, setData, setFoundName }) {
   return (

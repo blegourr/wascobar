@@ -1,7 +1,7 @@
 import './second_layer.css'
 
-import img1 from './assets/img1.jpg'
-import img2 from './assets/img2.jpg'
+import img1 from './assets/img1.webp'
+import img2 from './assets/img2.webp'
 
 function second_layer() {
   return (

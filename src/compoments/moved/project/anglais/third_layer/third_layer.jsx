@@ -1,8 +1,6 @@
 import './third_layer.css'
 
-// import img1 from './assets/img1.jpg'
-// import img2 from './assets/img2.jpg'
-import need from './assets/need2.jpeg'
+import need from './assets/need2.webp'
 
 
 function third_layer() {

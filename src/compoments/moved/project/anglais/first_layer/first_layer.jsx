@@ -3,7 +3,7 @@ import './firstLayer.css'
 
 
 // import img
-import Anglais from './assets/Anglais.jpeg'
+import Anglais from './assets/Anglais.webp'
 
 function first_layer_project_anglais() {
   return (
