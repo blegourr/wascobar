@@ -1,5 +1,5 @@
 // import img
-import oscar from '../../../home/second_layer/assets/Dua.jpg'
+import oscar from '../../../home/second_layer/assets/Dua.webp'
 
 function first_layer_project_dualitee() {
   return (
