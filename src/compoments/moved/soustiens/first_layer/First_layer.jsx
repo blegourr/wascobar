@@ -4,7 +4,7 @@ import './First_layer.css';
 
 import wascobar from '../../../fixed/header/assets/logo.webp'
 
-import audioOhhhhNonnn from './assets/ohhhhhhhhNonnnnnn.mp3'
+import audioOhhhhNonnn from './assets/ohhhhhhhhNonnnnnn.ogg'
 import paypal from './assets/paypal.mp3'
 
 function first_layer_page_soutiens({data, setData, setFoundName}) {
