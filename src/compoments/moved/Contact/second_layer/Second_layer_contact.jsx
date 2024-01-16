@@ -9,7 +9,7 @@ function Second_layer_contact() {
       window.open('https://www.twitch.tv/tv_wyatt')
     }
     if (part == 2) {
-      window.location.href = 'mailto:adresse@example.com?subject=Demande de contact';
+      window.location.href = 'mailto:contactwascobar@gmail.com?subject=Demande de contact';
     }
     if (part === 3) {
       window.open('https://discord.gg/SMJ7DxrFxY')
