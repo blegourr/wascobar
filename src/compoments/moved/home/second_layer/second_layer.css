@@ -49,6 +49,10 @@
   background: linear-gradient(205deg, #13075E 0%, rgba(10, 3, 53, 0.20) 100%);
 }
 
+.HomeSecondLayers .containerCard .card .content-card h1 {
+  text-align: center;
+}
+
 .HomeSecondLayers .containerCard .card img {
   border-radius: 50%;
   object-fit: cover;

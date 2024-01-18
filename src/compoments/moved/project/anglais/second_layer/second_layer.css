@@ -1,12 +1,8 @@
 .second_layer_projet_Film {
   width: 100%;
-  background-color: #020010;
-
 }
 
 .second_layer_projet_Film .info {
-  /* height: 35vw; */
-  background-color: #020010;
   display: flex;
   align-items: center;
   justify-content: center;

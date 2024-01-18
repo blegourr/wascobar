@@ -5,9 +5,9 @@ import './third_layer.css'
 
 import Baptiste from './assets/bap.webp'
 import MayoCherie from './assets/mayoCherie.webp';
-import Watt from './assets/watt.jpg';
-import Oscar from './assets/oscar.jpg';
-import Clip from './assets/clip.mp3'
+import Watt from './assets/wyatt2.webp';
+import Oscar from './assets/oscar.webp';
+import Clip from './assets/clip.ogg'
 
 function Home_third_layer({ data, setData, setFoundName }) {
   const [logoClickCount, setLogoClickCount] = useState(0);

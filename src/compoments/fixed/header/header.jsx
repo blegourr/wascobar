@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import './header.css'
 
 // import d'image
-import Logo from './assets/logo.webp'
+import Logo from '../../../../public/logo.webp'
 
 // import élément
 import Background from './background';

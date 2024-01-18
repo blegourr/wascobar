@@ -7,14 +7,20 @@ import ThirdLayer from '../../compoments/moved/project/anglais/third_layer/third
 import FooterCompongnement from '../../compoments/fixed/footer/Footer';
 
 
+import '../background/Anglais/Anglais.css'
+import back from '../background/Anglais/assets/back.webp'
+
 function PageAnglais({ data, setData, setFoundName }) {
   return (
     <div className='PageAnglais'>
       <HeaderCompongnement data={data} setData={setData} setFoundName={setFoundName} />
       <FirstLayer />
       <SecondLayer />
-      {/* <ThirdLayer /> */}
+      <ThirdLayer />
       <FooterCompongnement />
+      <div className="backgroundFixedPageAnglais">
+        <img src={back} alt="" />
+      </div>
     </div>
   );
 }
