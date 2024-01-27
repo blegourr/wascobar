@@ -65,7 +65,7 @@ function Home_third_layer({ data, setData, setFoundName }) {
         <img src={Oscar} alt="" />
       </div>
       <div className="groups">
-        <p>Maxence aussi appelé plus communément Mayo, c&apos;est celui qui prendra en image tout nos cours métrage et faire briller l&apos;image comme il sait bien le faire.</p>
+        <p>Maxence aussi appelé plus communément Mayo, c&apos;est celui qui prendra en image tous nos court métrage et faire briller l&apos;image comme il sait bien le faire.</p>
         <img src={MayoCherie} alt="" />
       </div>
 
