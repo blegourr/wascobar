@@ -54,7 +54,7 @@ function HomeSecondLayers() {
           <div className="content-card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
             <h1>Rendez-vous à Londres</h1>
             <img src={Anglais} alt="" />
-            <p>Rendez-vous à Londres est pour l&apos;instant c&apos;est le court métrage d&apos;action de Baptiste</p>
+            <p>Rendez-vous à Londres est pour l&apos;instant le court métrage d&apos;action de Baptiste</p>
             <div className="bg-animate"></div>
           </div>
         </div>
@@ -62,7 +62,7 @@ function HomeSecondLayers() {
           <div className="content-card" style={{ transform: "rotateX(0deg) rotateY(0deg)" }}>
             <h1>Romance</h1>
             <img src={Romance} alt="" />
-            <p>C&apos;est un projet de court métrage Romantique/Humouristique, par Wyatt</p>
+            <p>C&apos;est un projet de court métrage romantique/humouristique, par Wyatt</p>
             <div className="bg-animate"></div>
           </div>
         </div>

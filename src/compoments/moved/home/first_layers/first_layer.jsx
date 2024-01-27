@@ -79,7 +79,7 @@ function First_layer_Home({ data, setData, setFoundName }) {
         </div>
         <div className="contentText">
           <h1>Wascobar</h1>
-          <p>Wascobar est un jeunes studio de cinéma crée par de jeunes étudiants en Bretagne</p>
+          <p>Wascobar est un jeune studio de cinéma créé par de jeunes étudiants en Bretagne</p>
         </div>
       </div>
       <div className="background">

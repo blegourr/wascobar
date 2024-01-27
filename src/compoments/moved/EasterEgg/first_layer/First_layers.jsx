@@ -43,7 +43,7 @@ function FirstLayerEasterEgg({ data }) {
               <div className={`content-card ${!easter.found && 'notFound'}`}>
                 <div className="content">
                   <h1>{easter.found ? easter.name : "Not found"}</h1>
-                  <p>{easter.found ? easter.description : "Il semblerais que vous n'avez pas trouver cette Easter_egg"}</p>
+                  <p>{easter.found ? easter.description : "Il semblerait que vous n'ayez pas trouvé cet Easter_egg "}</p>
                 </div>
                 <div className={`background ${!easter.found && 'notFound'}`}></div>
               </div>
